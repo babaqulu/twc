@@ -1,0 +1,900 @@
+.dropDownNavbar {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #fbfbf9;
+  margin: 0 auto;
+  padding-top: 2rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: 0.5s all ease;
+}
+.dropDownNavbar .dropDownTitle {
+  font-size: 24px;
+  font-weight: 500;
+  color: #171717;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+.dropDownNavbar .dropDownSelections {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+  padding-right: 5rem;
+  padding-left: 2rem;
+}
+.dropDownNavbar .dropDownSelections .dropDownSelection {
+  width: 320px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #171717;
+  text-decoration: none;
+}
+.dropDownNavbar .dropDownSelections .dropDownSelection:hover {
+  font-weight: 500;
+  color: #01AB8D;
+}
+.dropDownNavbar .dropDownLine {
+  margin-top: 2rem;
+  height: 20px;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #01AB8D;
+}
+@media (max-width: 930px) {
+  .dropDownNavbar {
+    width: 60%;
+  }
+}
+
+.hamburger {
+  display: none;
+  border: none;
+  background-color: transparent;
+  filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(1579%) hue-rotate(290deg) brightness(110%) contrast(96%);
+}
+@media (max-width: 930px) {
+  .hamburger {
+    display: initial;
+  }
+}
+
+.smallDevice {
+  display: none;
+}
+
+.dropDownNone {
+  display: none;
+  transition: 0.5s all ease;
+}
+
+.navbar {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  z-index: 2;
+  position: fixed;
+  transition: 0.5s all ease;
+}
+.navbar .activeMainNav {
+  background-color: #fbfbf9;
+}
+.navbar .activeMainNav .infoContainer {
+  border-bottom: 1px solid #2c2c2c;
+}
+.navbar .activeMainNav .infoContainer .contactTextWhite {
+  color: #171717;
+}
+.navbar .activeMainNav .infoContainer .socialmediaIconColorWhite {
+  filter: brightness(1) invert(1);
+}
+.navbar .activeMainNav .infoContainer .socialmediaIconColorWhite:hover {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+.navbar .activeMainNav .navContainer .hamburger {
+  display: none;
+  border: none;
+  background-color: transparent;
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+@media (max-width: 930px) {
+  .navbar .activeMainNav .navContainer .hamburger {
+    display: initial;
+  }
+}
+.navbar .activeMainNav .navContainer .logoImgWhite {
+  filter: brightness(1) invert(1);
+}
+.navbar .activeMainNav .navContainer .logoImgWhite:hover {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+.navbar .activeMainNav .navContainer .navMenu .navListLink:hover {
+  color: #01AB8D;
+  border-bottom: 2px solid #01AB8D;
+}
+.navbar .activeMainNav .navContainer .navMenu .navListLink:hover .dropIcon {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+.navbar .activeMainNav .navContainer .navMenu .downArrowWhite {
+  filter: brightness(1) invert(1);
+}
+.navbar .activeMainNav .navContainer .navMenu .navListLinkActive {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  cursor: pointer;
+  color: #01AB8D;
+  border-bottom: 2px solid #01AB8D;
+}
+.navbar .activeMainNav .navContainer .navMenu .navListLinkActive .dropIcon {
+  margin-left: 5px;
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%) !important;
+  rotate: 180deg;
+  transition: 1ms ease-in-out;
+}
+.navbar .activeMainNav .navContainer .navMenu .serviceListLink:hover {
+  color: #01AB8D;
+  border-bottom: 2px solid #01AB8D;
+}
+.navbar .activeMainNav .navContainer .navMenu .navListLinkWhite {
+  color: #2c2c2c;
+}
+.navbar .activeMainNav .navContainer .navMenu .serviceListLinkWhite {
+  color: #2c2c2c;
+}
+.navbar .activeMainNav .navContainer .languageIconWhite {
+  filter: brightness(1) invert(1);
+}
+.navbar .activeMainNav .navContainer .languageDropIconWhite {
+  filter: brightness(1) invert(1);
+}
+.navbar .activeMainNav .navContainer .language_btnWhite {
+  color: #171717;
+}
+.navbar .activeMainNav .navContainer .languageContainer:hover .languageIcon {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+.navbar .activeMainNav .navContainer .languageContainer:hover .languageDropIcon {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+.navbar .activeMainNav .navContainer .languageContainer:hover .language_btn {
+  color: #01AB8D;
+}
+.navbar:hover .mainNav {
+  background-color: #fbfbf9;
+}
+.navbar:hover .infoContainer {
+  border-bottom: 1px solid #2c2c2c;
+}
+.navbar:hover .infoContainer .contactTextWhite {
+  color: #171717;
+}
+.navbar:hover .infoContainer .socialmediaIconColorWhite {
+  filter: brightness(1) invert(1);
+}
+.navbar:hover .infoContainer .socialmediaIconColorWhite:hover {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+.navbar:hover .navContainer .logoImgWhite {
+  filter: brightness(1) invert(1);
+}
+.navbar:hover .navContainer .logoImgWhite:hover {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+.navbar:hover .navContainer .navMenu .navListLink:hover {
+  color: #01AB8D;
+  border-bottom: 2px solid #01AB8D;
+}
+.navbar:hover .navContainer .navMenu .navListLink:hover .dropIcon {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+.navbar:hover .navContainer .navMenu .downArrowWhite {
+  filter: brightness(1) invert(1);
+}
+.navbar:hover .navContainer .navMenu .navListLinkActive {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  cursor: pointer;
+  color: #01AB8D;
+  border-bottom: 2px solid #01AB8D;
+}
+.navbar:hover .navContainer .navMenu .navListLinkActive .dropIcon {
+  margin-left: 5px;
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%) !important;
+  rotate: 180deg;
+  transition: 1ms ease-in-out;
+}
+.navbar:hover .navContainer .navMenu .serviceListLink:hover {
+  color: #01AB8D;
+  border-bottom: 2px solid #01AB8D;
+}
+.navbar:hover .navContainer .navMenu .navListLinkWhite {
+  color: #2c2c2c;
+}
+.navbar:hover .navContainer .navMenu .serviceListLinkWhite {
+  color: #2c2c2c;
+}
+.navbar:hover .navContainer .languageIconWhite {
+  filter: brightness(1) invert(1);
+}
+.navbar:hover .navContainer .languageDropIconWhite {
+  filter: brightness(1) invert(1);
+}
+.navbar:hover .navContainer .language_btnWhite {
+  color: #171717;
+}
+.navbar:hover .navContainer .languageContainer:hover .languageIcon {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+.navbar:hover .navContainer .languageContainer:hover .languageDropIcon {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+.navbar:hover .navContainer .languageContainer:hover .language_btn {
+  color: #01AB8D;
+}
+
+.activeNavbar {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  position: fixed;
+  z-index: 2;
+  transition: 0.5s all ease;
+}
+.activeNavbar .activeMainNav {
+  background-color: #fbfbf9;
+}
+.activeNavbar .activeMainNav .hamburger {
+  display: none;
+  border: none;
+  background-color: transparent;
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+@media (max-width: 930px) {
+  .activeNavbar .activeMainNav .hamburger {
+    display: initial;
+  }
+}
+.activeNavbar .mainNav {
+  background-color: #fbfbf9;
+  box-shadow: 0px 35px 65px 3px rgba(0, 0, 0, 0.26);
+}
+.activeNavbar .hamburger {
+  display: none;
+  border: none;
+  background-color: transparent;
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+@media (max-width: 930px) {
+  .activeNavbar .hamburger {
+    display: initial;
+  }
+}
+.activeNavbar:hover .infoContainer .socialmediaIconColorWhite:hover {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+.activeNavbar:hover .navContainer .logoImgWhite {
+  filter: brightness(1) invert(1);
+}
+.activeNavbar:hover .navContainer .logoImgWhite:hover {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+.activeNavbar:hover .navContainer .logoImgBlack:hover {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+.activeNavbar:hover .navContainer .navMenu .navListLink:hover {
+  color: #01AB8D;
+  border-bottom: 2px solid #01AB8D;
+}
+.activeNavbar:hover .navContainer .navMenu .navListLink:hover .dropIcon {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+.activeNavbar:hover .navContainer .navMenu .navListLinkActive {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  cursor: pointer;
+  color: #01AB8D;
+  border-bottom: 2px solid #01AB8D;
+}
+.activeNavbar:hover .navContainer .navMenu .navListLinkActive .dropIcon {
+  margin-left: 5px;
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%) !important;
+  rotate: 180deg;
+  transition: 1ms ease-in-out;
+}
+.activeNavbar:hover .navContainer .navMenu .serviceListLink:hover {
+  color: #01AB8D;
+  border-bottom: 2px solid #01AB8D;
+}
+.activeNavbar:hover .navContainer .navMenu .navListLinkWhite {
+  color: #2c2c2c;
+}
+.activeNavbar:hover .navContainer .navMenu .serviceListLinkWhite {
+  color: #2c2c2c;
+}
+.activeNavbar:hover .navContainer .languageIconWhite {
+  filter: brightness(1) invert(1);
+}
+.activeNavbar:hover .navContainer .languageDropIconWhite {
+  filter: brightness(1) invert(1);
+}
+.activeNavbar:hover .navContainer .language_btnWhite {
+  color: #171717;
+}
+.activeNavbar:hover .navContainer .languageContainer:hover .languageIcon {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+.activeNavbar:hover .navContainer .languageContainer:hover .languageDropIcon {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+.activeNavbar:hover .navContainer .languageContainer:hover .language_btn {
+  color: #01AB8D;
+}
+.activeNavbar .infoContainer {
+  border-bottom: 1px solid #2c2c2c;
+}
+.activeNavbar .infoContainer .contact .contactTextWhite {
+  color: #171717;
+}
+.activeNavbar .infoContainer .contact .contactText {
+  color: #171717;
+}
+.activeNavbar .infoContainer .socialmediaIconColorWhite {
+  filter: brightness(1) invert(1);
+}
+.activeNavbar .infoContainer .socialmediaIconColorWhite:hover {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+.activeNavbar .navContainer .logoImgWhite {
+  filter: brightness(1) invert(1);
+}
+.activeNavbar .navContainer .logoImgWhite:hover {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+.activeNavbar .navContainer .navMenu .navListLink:hover {
+  color: #01AB8D;
+  border-bottom: 2px solid #01AB8D;
+}
+.activeNavbar .navContainer .navMenu .navListLink .downArrowWhite {
+  filter: brightness(1) invert(1);
+}
+.activeNavbar .navContainer .navMenu .navListLinkActive {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  cursor: pointer;
+  color: #01AB8D;
+  border-bottom: 2px solid #01AB8D;
+}
+.activeNavbar .navContainer .navMenu .navListLinkActive .dropIcon {
+  margin-left: 5px;
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%) !important;
+  rotate: 180deg;
+  transition: 1ms ease-in-out;
+}
+.activeNavbar .navContainer .navMenu .serviceListLink:hover {
+  color: #01AB8D;
+  border-bottom: 2px solid #01AB8D;
+}
+.activeNavbar .navContainer .navMenu .navListLinkWhite {
+  color: #2c2c2c;
+}
+.activeNavbar .navContainer .navMenu .serviceListLinkWhite {
+  color: #2c2c2c;
+}
+.activeNavbar .navContainer .languageContainer .languageIconWhite {
+  filter: brightness(1) invert(1);
+}
+.activeNavbar .navContainer .languageContainer .languageDropIconWhite {
+  filter: brightness(1) invert(1);
+}
+.activeNavbar .navContainer .languageContainer .language_btnWhite {
+  color: #171717;
+}
+.activeNavbar .navContainer .languageContainer:hover .languageIcon {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+.activeNavbar .navContainer .languageContainer:hover .languageDropIcon {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+.activeNavbar .navContainer .languageContainer:hover .language_btn {
+  color: #01AB8D;
+}
+
+.navMini {
+  background-color: transparent;
+}
+.navMini .activeMainNav {
+  background-color: #fbfbf9;
+}
+.navMini .activeMainNav .hamburger {
+  display: none;
+  border: none;
+  background-color: transparent;
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+@media (max-width: 930px) {
+  .navMini .activeMainNav .hamburger {
+    display: initial;
+  }
+}
+.navMini .mainNav {
+  background-color: #fbfbf9;
+}
+.navMini .mainNav .hamburger {
+  display: none;
+  border: none;
+  background-color: transparent;
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+@media (max-width: 930px) {
+  .navMini .mainNav .hamburger {
+    display: initial;
+  }
+}
+.navMini .infoContainer {
+  display: none;
+}
+.navMini:hover .navContainer .logoImgWhite {
+  filter: brightness(1) invert(1);
+}
+.navMini:hover .navContainer .logoImgWhite:hover {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+.navMini:hover .navContainer .logoImgBlack:hover {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+.navMini:hover .navContainer .navMenu .navListLink:hover {
+  color: #01AB8D;
+  border-bottom: 2px solid #01AB8D;
+}
+.navMini:hover .navContainer .navMenu .navListLink .downArrowWhite {
+  filter: brightness(1) invert(1);
+}
+.navMini:hover .navContainer .navMenu .navListLinkActive {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  cursor: pointer;
+  color: #01AB8D;
+  border-bottom: 2px solid #01AB8D;
+}
+.navMini:hover .navContainer .navMenu .navListLinkActive .dropIcon {
+  margin-left: 5px;
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%) !important;
+  rotate: 180deg;
+  transition: 1ms ease-in-out;
+}
+.navMini:hover .navContainer .navMenu .serviceListLink:hover {
+  color: #01AB8D;
+  border-bottom: 2px solid #01AB8D;
+}
+.navMini:hover .navContainer .navMenu .navListLinkWhite {
+  color: #2c2c2c;
+}
+.navMini:hover .navContainer .navMenu .serviceListLinkWhite {
+  color: #2c2c2c;
+}
+.navMini:hover .navContainer .languageIconWhite {
+  filter: brightness(1) invert(1);
+}
+.navMini:hover .navContainer .languageDropIconWhite {
+  filter: brightness(1) invert(1);
+}
+.navMini:hover .navContainer .language_btnWhite {
+  color: #171717;
+}
+.navMini:hover .navContainer .languageContainer:hover .languageIcon {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+.navMini:hover .navContainer .languageContainer:hover .languageDropIcon {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+.navMini:hover .navContainer .languageContainer:hover .language_btn {
+  color: #01AB8D;
+}
+.navMini:hover .hamburger {
+  display: none;
+  border: none;
+  background-color: transparent;
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+@media (max-width: 930px) {
+  .navMini:hover .hamburger {
+    display: initial;
+  }
+}
+
+.activeNavMini {
+  z-index: 2;
+}
+.activeNavMini .activeMainNav {
+  background-color: #fbfbf9;
+}
+.activeNavMini .mainNav {
+  background-color: #fbfbf9;
+  box-shadow: 0px 35px 65px 3px rgba(0, 0, 0, 0.26);
+}
+.activeNavMini .infoContainer {
+  display: none;
+}
+.activeNavMini .navContainer .logoImgBlack:hover {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+
+.infoContainerBlack {
+  border-bottom: 1px solid #171717;
+}
+
+.infoContainerWhite {
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.infoContainer {
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.infoContainer .contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 0.06;
+}
+.infoContainer .contact .contactText {
+  font-size: 12px;
+}
+.infoContainer .contact .contactTextWhite {
+  color: #fbfbf9;
+}
+.infoContainer .contact .contactTextBlack {
+  color: #171717;
+}
+.infoContainer .socialmedia {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 0.01;
+}
+@media (max-width: 430px) {
+  .infoContainer {
+    display: none;
+  }
+}
+
+.navContainer {
+  padding: 1em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navContainer .navMenuSm {
+  display: none;
+}
+.navContainer .navMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  text-decoration: none;
+}
+.navContainer .navMenu .navListLink {
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  margin-right: 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.navContainer .navMenu .navListLink .dropIcon {
+  margin-left: 5px;
+}
+.navContainer .navMenu .navListLinkActive {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  cursor: pointer;
+  color: #01AB8D;
+  border-bottom: 2px solid #01AB8D;
+}
+.navContainer .navMenu .navListLinkActive .dropIcon {
+  margin-left: 5px;
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%) !important;
+  rotate: 180deg;
+  transition: 1ms ease-in-out;
+}
+.navContainer .navMenu .navListLinkWhite {
+  color: white;
+}
+.navContainer .navMenu .navListLinkBlack {
+  color: #2c2c2c;
+}
+.navContainer .languageContainer .language_btn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  gap: 5px;
+  cursor: pointer;
+}
+.navContainer .languageContainer .language_btnWhite {
+  color: white;
+}
+.navContainer .languageContainer .language_btnBlack {
+  color: #2c2c2c;
+}
+
+@media (max-width: 930px) {
+  .bigDevice {
+    display: none;
+  }
+  .smallDevice {
+    display: flex;
+  }
+  .smallDevice .navbar:hover .mainNav {
+    background-color: transparent;
+  }
+  .smallDevice .navbar:hover .mainNav .navContainer .logoImgWhite {
+    filter: unset;
+  }
+  .smallDevice .navbar:hover .mainNav .navContainer .languageContainer .language_btn {
+    color: #fbfbf9;
+  }
+  .smallDevice .navbar:hover .mainNav .navContainer .languageContainer .language_btn .languageIconWhite {
+    filter: unset;
+  }
+  .smallDevice .navbar:hover .mainNav .navContainer .languageContainer .language_btn .languageDropIconWhite {
+    filter: unset;
+  }
+  .smallDevice .navbar .activeMainNav {
+    background-color: transparent;
+  }
+  .smallDevice .navbar .activeMainNav .navContainer .logoImgWhite {
+    filter: unset;
+  }
+  .smallDevice .navbar .activeMainNav .navContainer .languageContainer .language_btn {
+    color: #fbfbf9;
+  }
+  .smallDevice .navbar .activeMainNav .navContainer .languageContainer .language_btn .languageIconWhite {
+    filter: unset;
+  }
+  .smallDevice .navbar .activeMainNav .navContainer .languageContainer .language_btn .languageDropIconWhite {
+    filter: unset;
+  }
+  .smallDevice .navbar .activeMainNav .navContainer .hamburger {
+    filter: unset;
+  }
+  .smallDevice .activeNavbar .activeMainNav {
+    box-shadow: 0px 35px 65px 3px rgba(0, 0, 0, 0.26);
+  }
+  .smallDevice .navContainer {
+    position: relative;
+  }
+  .smallDevice .navContainer .navMenuSm {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #fbfbf9;
+    padding: 2rem;
+    right: 1rem;
+    top: 90%;
+    list-style: none;
+    z-index: -1;
+    border: 1px solid #01AB8D;
+  }
+  .smallDevice .navContainer .navMenuSm .navListLink {
+    width: -moz-max-content;
+    width: max-content;
+    font-size: 18px;
+    color: #01AB8D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .smallDevice .navContainer .navMenuSm .navListLink .dropIcon {
+    margin-left: 5px;
+    filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%) !important;
+  }
+  .smallDevice .navContainer .navMenuSm .navListLinkActive {
+    width: -moz-max-content;
+    width: max-content;
+    font-size: 18px;
+    color: #01AB8D;
+    border-bottom: 2px solid #01AB8D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .smallDevice .navContainer .navMenuSm .navListLinkActive .dropIcon {
+    margin-left: 5px;
+    filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%) !important;
+    rotate: 180deg;
+    transition: 1ms ease-in-out;
+  }
+  .smallDevice .navContainer .navMenuSm .dropDownNavbarSm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #fbfbf9;
+    transition: 0.5s all ease;
+  }
+  .smallDevice .navContainer .navMenuSm .dropDownNavbarSm .dropDownSelections {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .smallDevice .navContainer .navMenuSm .dropDownNavbarSm .dropDownSelections .dropDownSelection {
+    font-size: 16px;
+    font-weight: 300;
+    color: #171717;
+    text-decoration: none;
+  }
+  .smallDevice .hamburgerWrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .smallDevice .navMini {
+    background-color: #fbfbf9;
+  }
+  .smallDevice .navMini .activeMainNav {
+    background-color: #fbfbf9;
+  }
+  .smallDevice .navMini .activeMainNav .navContainer .hamburger {
+    background-color: transparent;
+    filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+  }
+  .smallDevice .navMini .activeMainNav .navContainer .languageContainer .language_btn {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .smallDevice .navMini .activeMainNav .navContainer .languageContainer .language_btnWhite {
+    color: #171717;
+  }
+  .smallDevice .navMini .activeMainNav .navContainer .languageContainer .language_btnBlack {
+    color: #171717;
+  }
+  .smallDevice .navMini .mainNav {
+    background-color: #fbfbf9;
+  }
+  .smallDevice .navMini .mainNav .hamburger {
+    background-color: transparent;
+    filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+  }
+  .smallDevice .navMini .mainNav .languageContainer .language_btn {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .smallDevice .navMini .mainNav .languageContainer .language_btnWhite {
+    color: #171717;
+  }
+  .smallDevice .navMini .mainNav .languageContainer .language_btnBlack {
+    color: #171717;
+  }
+  .smallDevice .navMini:hover .mainNav .navContainer .languageContainer .language_btn {
+    color: #01AB8D;
+  }
+  .smallDevice .navMini:hover .mainNav .navContainer .languageContainer .language_btn .languageIconWhite {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+  }
+  .smallDevice .navMini:hover .mainNav .navContainer .languageContainer .language_btn .languageDropIconWhite {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+  }
+  .smallDevice .navMini:hover .activeMainNav .navContainer .languageContainer .language_btn {
+    color: #01AB8D;
+  }
+  .smallDevice .navMini:hover .activeMainNav .navContainer .languageContainer .language_btn .languageIconWhite {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+  }
+  .smallDevice .navMini:hover .activeMainNav .navContainer .languageContainer .language_btn .languageDropIconWhite {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+  }
+  .smallDevice .activeNavMini {
+    background-color: #fbfbf9;
+  }
+  .smallDevice .activeNavMini .activeMainNav {
+    background-color: #fbfbf9;
+  }
+  .smallDevice .activeNavMini .activeMainNav .hamburger {
+    background-color: transparent;
+    filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+  }
+  .smallDevice .activeNavMini .activeMainNav .languageContainer .language_btn {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .smallDevice .activeNavMini .activeMainNav .languageContainer .language_btnWhite {
+    color: #171717;
+  }
+  .smallDevice .activeNavMini .activeMainNav .languageContainer .language_btnBlack {
+    color: #171717;
+  }
+  .smallDevice .activeNavMini .mainNav {
+    background-color: #fbfbf9;
+  }
+  .smallDevice .activeNavMini .mainNav .hamburger {
+    background-color: transparent;
+    filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+  }
+  .smallDevice .activeNavMini .mainNav .languageContainer .language_btn {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .smallDevice .activeNavMini .mainNav .languageContainer .language_btnWhite {
+    color: #171717;
+  }
+  .smallDevice .activeNavMini .mainNav .languageContainer .language_btnBlack {
+    color: #171717;
+  }
+}
+@media (max-width: 430px) {
+  .smallDevice .logoImgWhite {
+    width: 60px;
+    height: auto;
+  }
+  .smallDevice .logoImgBlack {
+    width: 60px;
+    height: auto;
+  }
+  .smallDevice .hamburger img {
+    width: 30px;
+    height: auto;
+  }
+  .smallDevice .languageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .smallDevice .languageContainer .language_btn {
+    font-size: 12px;
+    gap: 3px;
+  }
+  .smallDevice .languageContainer .language_btn .languageIcon {
+    width: 10px;
+    height: 10px;
+  }
+}/*# sourceMappingURL=nav.module.css.map */

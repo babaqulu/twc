@@ -1,0 +1,147 @@
+.trendNav {
+  width: 100%;
+  height: 67px;
+  display: block;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 0 10rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 5rem;
+  margin: 5rem 0;
+}
+.wrapper .descImg {
+  width: 100%;
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 5rem;
+}
+.wrapper .trendHeader {
+  font-size: 53px;
+  font-size: clamp(1.5rem, 2vw + 0.8rem, 4rem);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.wrapper .trendDesc {
+  font-size: 18px;
+  color: #878787;
+  line-height: 26px;
+}
+.wrapper .trendDesc h1 h2 h3 h4 {
+  font-size: 27px;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+.wrapper .latestTrends {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .latestTrends .cardHeader {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.wrapper .latestTrends .trendsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.wrapper .latestTrends .latestCardLink {
+  height: 90px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.wrapper .latestTrends .latestCardLink .latestCardImg {
+  width: 90px;
+  height: 90px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 1rem;
+}
+.wrapper .latestTrends .latestCardText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.wrapper .latestTrends .latestCardText .date {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #878787;
+}
+.wrapper .latestTrends .latestCardText .title {
+  font-size: 16px;
+  color: #171717;
+}
+.wrapper .latestTrends .latestCardText .titleSm {
+  display: none;
+  font-size: 16px;
+  color: #171717;
+}
+
+@media (max-width: 1440px) {
+  .wrapper {
+    gap: 2rem;
+    padding: 0 5rem;
+  }
+  .wrapper .latestTrends .trendsList .latestCardLink .latestCardText .title {
+    display: none;
+  }
+  .wrapper .latestTrends .trendsList .latestCardLink .latestCardText .titleSm {
+    display: inline-block;
+  }
+}
+@media (max-width: 1040px) {
+  .wrapper {
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 912px) {
+  .wrapper {
+    flex-direction: column;
+    margin: 3rem 0;
+  }
+  .wrapper .descImg {
+    height: 40vh;
+    margin-bottom: 2rem;
+  }
+  .wrapper .latestTrends {
+    width: 100%;
+    height: auto;
+  }
+  .wrapper .latestTrends .trendsList {
+    width: 100%;
+    gap: 2rem;
+  }
+  .wrapper .latestTrends .trendsList .latestCardLink {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .latestTrends .trendsList .latestCardLink .latestCardImg {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .wrapper .latestTrends .trendsList .latestCardLink .latestCardText {
+    gap: 1rem;
+  }
+  .wrapper .latestTrends .trendsList .latestCardLink .latestCardText .title {
+    display: inline-block;
+    font-size: 26px;
+    font-size: clamp(1rem, 1vw + 0.5rem, 2rem);
+    font-weight: 400;
+  }
+  .wrapper .latestTrends .trendsList .latestCardLink .latestCardText .titleSm {
+    display: none;
+  }
+}/*# sourceMappingURL=trendStyle.module.css.map */

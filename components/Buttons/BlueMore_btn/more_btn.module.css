@@ -1,0 +1,17 @@
+.bluebtn_style {
+  width: 92px;
+  height: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000046;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000046;
+  text-decoration: none;
+}
+.bluebtn_style:hover {
+  background-color: #000046;
+  color: #fbfbf9;
+}/*# sourceMappingURL=more_btn.module.css.map */

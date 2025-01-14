@@ -1,0 +1,185 @@
+@import '../../styles/variables';
+
+.successContainer{
+  padding: 1rem;
+  background-color: $primary-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  border-radius: 5px;
+  .success{
+
+    color: $white;
+  
+  }
+}
+
+
+.form{
+  flex-grow: 1;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  
+
+
+.formHeader{
+  width: 500px;
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 400;
+  margin-bottom: 30px;
+
+  @media (max-width:430px) {
+    width: 100%;
+    font-size: 26px;
+  }
+}
+
+.inputsContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .inputsInnerLeft{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+  }
+  .input{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 67px;
+    background-color: transparent;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    border: 1px solid $black;
+    border-radius: 5px;
+  &::placeholder{
+    font-size: 14px;
+    color: #878787;
+  }
+
+  &:focus{
+    border: 2px solid $primary-color;
+  }
+  @media (max-width:430px) {
+    width: 300px;
+  }
+  }
+
+  .messageFile{
+    width: 70%;
+    height: 313px;
+    border: 1px solid $black;
+    border-radius: 5px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+
+    &:focus-within{
+      border: 2px solid $primary-color;
+    }
+
+    .message{
+      width: 100%;
+      height: 200px;
+      flex-grow: 1;
+      border-radius: 5px;
+      background-color: transparent;
+      padding-left: 10px;
+      padding-top: 10px;
+      border: none;
+      outline: none;
+      resize: none;
+
+      @media (max-width:430px) {
+        width: 300px;
+      }
+
+
+    }
+
+    .labelFile{
+      width: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 1rem;
+
+      .label{
+        font-size: 14px;
+        color: $gray;
+
+      }
+      .papperClip{
+        display: flex;
+        margin-left: 10px;
+
+      }
+    }
+    .file{
+      margin-left: 10px;
+      border: none;
+      display: none;
+      outline: none;
+      background-color: transparent;
+      outline: none;
+      
+    }
+    @media (max-width:430px) {
+      width: 300px;
+    }
+
+  }
+
+}
+.submitButton{
+  width: 156px;
+  height: 45px;
+  background-color: $primary-color;
+  border:none;
+  margin-top: 1em;
+  color: $white;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-right: 0.7em;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+}
+
+@media (max-width:720px){
+  .form{
+  margin-top: 2rem;
+    .inputsContainer{
+      width: 100%;
+      flex-direction: column;
+      .inputsInnerLeft{
+        width: 100%;
+        .input{
+          width: 100%;
+        }
+
+      }
+      .messageFile{
+        width: 100%;
+
+        .message{
+          width: 100%;
+        }
+      }
+    }
+  }
+
+
+}

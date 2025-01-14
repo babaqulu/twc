@@ -1,0 +1,172 @@
+.karyeraMain .innerMain {
+  position: relative;
+  padding: 5rem 0;
+}
+.karyeraMain .innerMain .title {
+  text-align: center;
+  font-size: 48px;
+  color: #000046;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+.karyeraMain .innerMain .desc {
+  text-align: start;
+  font-size: 30px;
+  font-weight: 400;
+  color: #878787;
+  padding: 0 20rem;
+  margin-bottom: 5rem;
+}
+.karyeraMain .innerMain .internsDiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15rem;
+  margin-bottom: 5.5rem;
+}
+.karyeraMain .innerMain .bgKaryera {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  z-index: -4;
+  background-size: cover;
+  filter: blur(50px);
+}
+.karyeraMain .vacancies {
+  padding: 0 35rem;
+  margin-bottom: 7rem;
+}
+.karyeraMain .vacancies .vacancyTitle {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 400;
+  color: #171717;
+  margin-bottom: 5rem;
+}
+.karyeraMain .bottomLinks {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 20rem;
+  background-color: #F5F5F3;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 2200px) {
+  .karyeraMain .vacancies {
+    padding: 0 25rem;
+  }
+}
+@media (max-width: 1920px) {
+  .karyeraMain .innerMain .desc {
+    padding: 0 10rem;
+  }
+  .karyeraMain .innerMain .internsDiv {
+    padding: 0 10rem;
+  }
+  .karyeraMain .vacancies {
+    padding: 0 15rem;
+  }
+  .karyeraMain .bottomLinks {
+    padding: 2rem 10rem;
+  }
+}
+@media (max-width: 1600px) {
+  .karyeraMain .bottomLinks {
+    padding: 2rem 5rem;
+  }
+}
+@media (max-width: 1440px) {
+  .karyeraMain .innerMain {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 4rem;
+  }
+  .karyeraMain .innerMain .desc {
+    padding: 0 5rem;
+  }
+  .karyeraMain .innerMain .internsDiv {
+    padding: 0 5rem;
+  }
+  .karyeraMain .vacancies {
+    padding: 0 10rem;
+  }
+}
+@media (max-width: 1280px) {
+  .karyeraMain .innerMain .desc {
+    font-size: 24px;
+  }
+  .karyeraMain .innerMain .internsDiv {
+    padding: 0 2rem;
+  }
+  .karyeraMain .vacancies {
+    padding: 0 5rem;
+  }
+}
+@media (max-width: 940px) {
+  .karyeraMain .bottomLinks {
+    padding: 2rem 2rem;
+  }
+}
+@media (max-width: 920px) {
+  .karyeraMain .innerMain .internsDiv {
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+}
+@media (max-width: 853px) {
+  .karyeraMain .bottomLinks {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .karyeraMain .innerMain .title {
+    font-size: 36px;
+  }
+  .karyeraMain .innerMain .desc {
+    padding: 0 2rem;
+  }
+  .karyeraMain .innerMain .internsDiv {
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  .karyeraMain .vacancies {
+    width: 100%;
+    padding: 0 2rem;
+    margin-bottom: 4rem;
+  }
+  .karyeraMain .vacancies .vacancyTitle {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 630px) {
+  .karyeraMain .innerMain .desc {
+    font-size: 18px;
+  }
+}
+@media (max-width: 430px) {
+  .karyeraMain .innerMain .title {
+    font-size: 26px;
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .karyeraMain .innerMain .internsDiv {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 2rem;
+  }
+  .karyeraMain .vacancies {
+    width: 100%;
+  }
+  .karyeraMain .vacancies .vacancyTitle {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=karyeraStyle.module.css.map */

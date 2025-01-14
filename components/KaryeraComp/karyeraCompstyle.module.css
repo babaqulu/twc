@@ -1,0 +1,93 @@
+.karyeraMainContainer {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: space-around;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  position: relative;
+}
+.karyeraMainContainer .headerContainer {
+  width: 484px;
+  margin-bottom: 6rem;
+}
+.karyeraMainContainer .karyeraHeader {
+  font-size: 45px;
+  font-weight: 500;
+  color: #000046;
+  line-height: 50px;
+  margin-bottom: 1rem;
+}
+.karyeraMainContainer .bg {
+  width: 100%;
+  height: 362px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+}
+.karyeraMainContainer .heroContainer {
+  display: flex;
+  justify-content: end;
+  border-top: 25px solid #fbfbf9;
+  border-left: 25px solid #fbfbf9;
+  border-right: 25px solid #fbfbf9;
+}
+
+@media (max-width: 1024px) {
+  .karyeraMainContainer {
+    justify-content: space-between;
+    margin: 3rem 0;
+    padding: 0 2rem;
+  }
+  .karyeraMainContainer .headerContainer {
+    width: unset;
+    margin-right: 0.5rem;
+  }
+  .karyeraMainContainer .headerContainer .karyeraHeader {
+    font-size: 32px;
+  }
+}
+@media (max-width: 700px) {
+  .karyeraMainContainer {
+    padding-left: 2rem;
+    padding-right: 0;
+  }
+  .karyeraMainContainer .headerContainer .karyeraHeader {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .karyeraMainContainer .heroContainer {
+    border: none;
+  }
+  .karyeraMainContainer .bg {
+    height: 282px;
+  }
+}
+@media (max-width: 577px) {
+  .karyeraMainContainer .heroContainer .hero {
+    width: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width: 474px) {
+  .karyeraMainContainer {
+    margin: 3rem 0;
+    height: 150px;
+    align-items: center;
+  }
+  .karyeraMainContainer .headerContainer {
+    margin: 0;
+  }
+  .karyeraMainContainer .headerContainer .karyeraHeader {
+    font-size: 22px;
+  }
+  .karyeraMainContainer .heroContainer .hero {
+    display: none;
+  }
+  .karyeraMainContainer .bg {
+    height: 150px;
+  }
+}/*# sourceMappingURL=karyeraCompstyle.module.css.map */

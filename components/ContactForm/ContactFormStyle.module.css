@@ -1,0 +1,168 @@
+.successContainer {
+  padding: 1rem;
+  background-color: #01AB8D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+.successContainer .success {
+  color: #fbfbf9;
+}
+
+.form {
+  flex-grow: 1;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.form .formHeader {
+  width: 500px;
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+@media (max-width: 430px) {
+  .form .formHeader {
+    width: 100%;
+    font-size: 26px;
+  }
+}
+.form .inputsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.form .inputsContainer .inputsInnerLeft {
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+}
+.form .inputsContainer .input {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 67px;
+  background-color: transparent;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  border: 1px solid #171717;
+  border-radius: 5px;
+}
+.form .inputsContainer .input::-moz-placeholder {
+  font-size: 14px;
+  color: #878787;
+}
+.form .inputsContainer .input::placeholder {
+  font-size: 14px;
+  color: #878787;
+}
+.form .inputsContainer .input:focus {
+  border: 2px solid #01AB8D;
+}
+@media (max-width: 430px) {
+  .form .inputsContainer .input {
+    width: 300px;
+  }
+}
+.form .inputsContainer .messageFile {
+  width: 70%;
+  height: 313px;
+  border: 1px solid #171717;
+  border-radius: 5px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+.form .inputsContainer .messageFile:focus-within {
+  border: 2px solid #01AB8D;
+}
+.form .inputsContainer .messageFile .message {
+  width: 100%;
+  height: 200px;
+  flex-grow: 1;
+  border-radius: 5px;
+  background-color: transparent;
+  padding-left: 10px;
+  padding-top: 10px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+@media (max-width: 430px) {
+  .form .inputsContainer .messageFile .message {
+    width: 300px;
+  }
+}
+.form .inputsContainer .messageFile .labelFile {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1rem;
+}
+.form .inputsContainer .messageFile .labelFile .label {
+  font-size: 14px;
+  color: #878787;
+}
+.form .inputsContainer .messageFile .labelFile .papperClip {
+  display: flex;
+  margin-left: 10px;
+}
+.form .inputsContainer .messageFile .file {
+  margin-left: 10px;
+  border: none;
+  display: none;
+  outline: none;
+  background-color: transparent;
+  outline: none;
+}
+@media (max-width: 430px) {
+  .form .inputsContainer .messageFile {
+    width: 300px;
+  }
+}
+.form .submitButton {
+  width: 156px;
+  height: 45px;
+  background-color: #01AB8D;
+  border: none;
+  margin-top: 1em;
+  color: #fbfbf9;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-right: 0.7em;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  .form {
+    margin-top: 2rem;
+  }
+  .form .inputsContainer {
+    width: 100%;
+    flex-direction: column;
+  }
+  .form .inputsContainer .inputsInnerLeft {
+    width: 100%;
+  }
+  .form .inputsContainer .inputsInnerLeft .input {
+    width: 100%;
+  }
+  .form .inputsContainer .messageFile {
+    width: 100%;
+  }
+  .form .inputsContainer .messageFile .message {
+    width: 100%;
+  }
+}/*# sourceMappingURL=ContactFormStyle.module.css.map */

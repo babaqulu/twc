@@ -1,0 +1,173 @@
+@import '../../styles/variables';
+
+.main{
+
+  .elaqeNavbar{
+
+    width: 100%;
+    height: max-content;
+  }
+
+  .hero{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: bottom;
+    // margin-bottom: 3rem;  
+
+  }
+}
+
+.innerContainer{
+  padding: 0 5rem;
+  background-image: url('../../public/img/BG.png');
+  object-fit: cover;
+  background-size: cover;
+  @media (max-width:1280px) {
+    margin-top: 0;
+    padding: 0 2rem;
+  }
+
+
+}
+
+.contactInfo{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-left: 2rem;
+width: 100%;
+margin-top: 160px;
+border: 1px solid $gray;
+border-radius: 5px;
+
+.map{
+  width: 40%;
+  height: 394px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  .mapImg{
+    width: 100%;
+    height: 394px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    object-fit: cover;
+    border: none;
+
+  }
+
+}
+
+.contactsWrapper{
+  width: 45%;
+  height: 394px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: transparent;
+
+
+
+  .contactsHeader{
+    width: 100%;
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 400;
+
+
+    @media (max-width:430px) {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+
+  .contacts{
+    display: flex;
+    align-items: center;
+    gap: 3rem;  
+
+    @media (max-width:430px) {
+      margin-top: 1rem;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+}
+
+}
+}
+
+@media (max-width:912px){
+  .main{
+    .hero{
+      object-position: 65% 0;
+    }
+    .innerContainer{
+      .contactInfo{
+        padding: 0;
+        flex-direction: column;
+        justify-content: unset;
+        margin-top: 3rem;
+        
+        .contactsWrapper{
+          width: 100%;
+          height: auto;
+          padding:0 2rem;
+          margin: 2rem 0;
+          .contactsHeader{
+            font-size: 26px;
+          }
+          
+        }
+        .map{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px){
+  .main{
+    .hero{
+      object-position: 65% 0;
+    }
+    .innerContainer{
+      .contactInfo{
+
+        .contactsWrapper{
+          .contacts{
+            flex-direction: column;
+            justify-content: unset;
+            align-items: unset;
+            gap: 1rem;
+          }
+          
+        }
+
+      }
+    }
+  }
+}
+
+@media (max-width:430px){
+  .main{
+
+
+    .innerContainer{
+      .contactInfo{
+
+        
+        .contactsWrapper{
+
+          .contactsHeader{
+            font-size: 20px;
+          }
+          
+        }
+
+      }
+    }
+  }
+}

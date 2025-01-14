@@ -1,0 +1,75 @@
+.eventContainer {
+  display: flex;
+  flex-direction: column;
+}
+.eventContainer .eventHero {
+  width: 1000px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 20px;
+}
+.eventContainer .header {
+  color: #171717;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.eventContainer .desc {
+  width: 1000px;
+  font-size: 20px;
+  line-height: 32px;
+  color: #171717;
+  margin-bottom: 1rem;
+}
+.eventContainer .desc br {
+  display: none;
+}
+
+@media (max-width: 2530px) {
+  .eventContainer .eventHero {
+    width: 900px;
+  }
+  .eventContainer .desc {
+    width: 900px;
+  }
+}
+@media (max-width: 2350px) {
+  .eventContainer .eventHero {
+    width: 700px;
+  }
+  .eventContainer .desc {
+    width: 700px;
+  }
+}
+@media (max-width: 2120px) {
+  .eventContainer .eventHero {
+    width: 800px;
+  }
+  .eventContainer .desc {
+    width: 800px;
+  }
+}
+@media (max-width: 1920px) {
+  .eventContainer .eventHero {
+    width: 700px;
+  }
+  .eventContainer .desc {
+    width: 700px;
+  }
+}
+@media (max-width: 1650px) {
+  .eventContainer .eventHero {
+    width: 600px;
+  }
+  .eventContainer .desc {
+    width: 600px;
+  }
+}
+@media (max-width: 1440px) {
+  .eventContainer .eventHero {
+    width: 100%;
+  }
+  .eventContainer .desc {
+    width: 100%;
+  }
+}/*# sourceMappingURL=eventStyle.module.css.map */

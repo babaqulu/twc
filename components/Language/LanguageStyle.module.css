@@ -1,0 +1,8 @@
+.languageContainer .language_btn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: white;
+  gap: 5px;
+}/*# sourceMappingURL=LanguageStyle.module.css.map */

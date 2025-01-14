@@ -1,0 +1,14 @@
+.members{
+  position: relative;
+  width: 100%;
+  height:max-content;
+  display: flex;
+  overflow: auto;
+  overflow-y: hidden;
+  justify-content: space-between;
+  gap: 3rem;
+
+  .mySwiper{
+    display: flex;
+  }
+}

@@ -1,0 +1,219 @@
+.blogNav {
+  width: 100%;
+  height: 67px;
+  display: block;
+}
+
+.wrapper {
+  width: 100%;
+  padding-left: 15rem;
+  padding-right: 10rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10rem;
+  margin: 5rem 0;
+}
+.wrapper .descImg {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 5rem;
+}
+.wrapper .blogHeader {
+  font-size: 53px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.wrapper .blogDesc {
+  font-size: 18px;
+  color: #878787;
+  line-height: 26px;
+}
+.wrapper .blogDesc h1 h2 h3 h4 {
+  font-size: 27px;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+.wrapper .latestBlogs {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .latestBlogs .cardHeader {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.wrapper .latestBlogs .blogsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.wrapper .latestBlogs .latestCardLink {
+  width: 400px;
+  height: 120px;
+  text-decoration: none;
+  display: flex;
+}
+.wrapper .latestBlogs .latestCardLink .latestCardImg {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 1rem;
+}
+.wrapper .latestBlogs .latestCardText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.wrapper .latestBlogs .latestCardText .date {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #878787;
+}
+.wrapper .latestBlogs .latestCardText .title {
+  font-size: 16px;
+  color: #171717;
+}
+
+@media (max-width: 1280px) {
+  .wrapper {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    gap: 3rem;
+  }
+  .wrapper .blogDesc h1 h2 h3 h4 {
+    font-size: 48px;
+    width: 80%;
+  }
+}
+@media (max-width: 1024px) {
+  .wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    gap: 5rem;
+  }
+  .wrapper .blogHeader {
+    width: 100%;
+    font-size: 28px;
+  }
+  .wrapper .blogDesc h1 h2 h3 h4 {
+    font-size: 48px;
+    width: 80%;
+  }
+  .wrapper .latestBlogs .latestCardLink {
+    width: 300px;
+  }
+  .wrapper .latestBlogs .latestCardText {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 912px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .wrapper .blogHeader {
+    width: 100%;
+  }
+  .wrapper .latestBlogs {
+    width: 100%;
+    height: auto;
+    padding: 0 3rem;
+  }
+  .wrapper .latestBlogs .blogsList {
+    width: 100%;
+    gap: 2rem;
+  }
+  .wrapper .latestBlogs .blogsList .latestCardLink {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper .latestBlogs .blogsList .latestCardLink .latestCardImg {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  .wrapper .latestBlogs .blogsList .latestCardLink .latestCardText {
+    gap: 1rem;
+  }
+  .wrapper .latestBlogs .blogsList .latestCardLink .latestCardText .title {
+    font-size: 26px;
+    font-weight: 600;
+  }
+}
+@media (max-width: 430px) {
+  .wrapper {
+    margin: 3rem 0;
+  }
+  .wrapper .descImg {
+    margin-bottom: 2rem;
+  }
+  .wrapper .blogDesc h1 h2 h3 h4 {
+    width: 100%;
+    font-size: 32px;
+    font-weight: 500;
+  }
+  .wrapper .blogHeader {
+    width: 100%;
+    font-size: 26px;
+  }
+  .wrapper .latestBlogs {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .wrapper .latestBlogs .cardHeader {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+  .wrapper .latestBlogs .blogsList {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+  }
+  .wrapper .latestBlogs .blogsList .latestCardLink {
+    width: auto;
+    height: 120px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+  }
+  .wrapper .latestBlogs .blogsList .latestCardLink .latestCardImg {
+    width: 120px;
+    height: 120px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-right: 1rem;
+  }
+  .wrapper .latestBlogs .blogsList .latestCardLink .latestCardText {
+    width: auto;
+  }
+  .wrapper .latestBlogs .blogsList .latestCardLink .latestCardText .title {
+    width: auto;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .wrapper .latestBlogs .latestCardText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .wrapper .latestBlogs .latestCardText .date {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #878787;
+  }
+  .wrapper .latestBlogs .latestCardText .title {
+    font-size: 16px;
+    color: #171717;
+  }
+}/*# sourceMappingURL=blog.module.css.map */

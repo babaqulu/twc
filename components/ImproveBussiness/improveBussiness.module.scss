@@ -1,0 +1,80 @@
+@import '/styles/variables';
+.improveBussiness{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 0 15rem;
+  margin-bottom: 8rem;
+  justify-content: space-between;
+}
+
+.improveHeader{
+  font-size: 52px;
+  line-height: 62px;
+  font-weight: 400;
+  width: 45%;
+}
+
+.improveDesc{
+  font-size: 16px;
+  line-height: 26px;
+  width: 45%;
+  color: $gray;
+}
+
+@media (max-width:1440px){
+  .improveBussiness{
+
+    padding: 0 10rem;
+  }
+}
+
+@media (max-width:1280px) {
+  .improveBussiness{
+    margin-top: 0;
+    padding: 0 5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .improveBussiness{
+    padding: 0 2rem;
+  }
+  
+}
+
+@media (max-width:912px) {
+  .improveBussiness{
+    padding: 0 3rem;
+    flex-direction: column;
+
+    .improveHeader{
+      width: 100%;
+      text-align: center;
+    }
+    .improveDesc{
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width:540px) {
+  .improveBussiness{
+    padding: 0 2rem;
+    .improveHeader{
+      font-size: 36px;
+    }
+
+  }
+}
+
+@media (max-width: 340px) {
+  .improveBussiness{
+    padding: 0 1rem;
+    .improveHeader{
+      font-size: 26px;
+      line-height: 32px;
+    }
+  }
+}

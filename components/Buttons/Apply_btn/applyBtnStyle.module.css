@@ -1,0 +1,49 @@
+.btn_container {
+  background-color: #01AB8D;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+.btn_container .btn_styleSm {
+  text-decoration: none;
+  color: #fbfbf9;
+  display: none;
+  align-items: center;
+  gap: 10px;
+}
+.btn_container .btn_styleSm .moreIcon {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(1579%) hue-rotate(290deg) brightness(110%) contrast(96%);
+}
+.btn_container .btn_style {
+  text-decoration: none;
+  color: #fbfbf9;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.btn_container .btn_style .moreIcon {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(1579%) hue-rotate(290deg) brightness(110%) contrast(96%);
+}
+.btn_container:hover {
+  border: 1px solid #01AB8D;
+  background: transparent;
+}
+.btn_container:hover .btn_style {
+  color: #01AB8D;
+}
+.btn_container:hover .moreIcon {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+
+@media (max-width: 630px) {
+  .btn_container {
+    padding: 0.5rem 1rem;
+  }
+}
+@media (max-width: 250px) {
+  .btn_container .btn_style {
+    display: none;
+  }
+  .btn_container .btn_styleSm {
+    display: flex;
+  }
+}/*# sourceMappingURL=applyBtnStyle.module.css.map */

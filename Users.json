@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name":"Senaye",
+      "img": "./public/img/IMAGE.jpg",
+      "header": "Biznes planlarınız və strategiyalarınız üçün ekspert məsləhətləri",
+      "productcount": 4,
+      "totalamount": 3200.42,
+      "statusList": {
+        "statusLabel": "gözləyir",
+        "statusId": "S2"
+      }
+    }
+  ]
+}

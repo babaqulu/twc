@@ -1,0 +1,38 @@
+.logoContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 50px;
+  border: 2px solid #8B8B8B;
+
+  .logo{
+    height: auto;
+    width: 188px;
+  }
+
+    @media (max-width: 1280px) {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width:912px) {
+  .logoContainer{
+    padding: 1rem 2rem;
+
+    .logo{
+      height: 120px;
+      width: auto;
+    }
+  }
+}
+
+@media (max-width:540px) {
+  .logoContainer{
+    padding: 1rem 1rem;
+
+    .logo{
+      height: 70px;
+      width: auto;
+    }
+  }
+}

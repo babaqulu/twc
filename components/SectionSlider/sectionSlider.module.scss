@@ -1,0 +1,68 @@
+.sliderContainer{
+  width: 100%;
+  height: 90vh;
+  margin-top: 100px;
+  position: relative;
+  
+  .heroImg{
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    object-fit: cover;
+  }
+}
+
+.sliderInfo{
+width: 488px;
+height: 198px;
+background-color: #171717;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+justify-content: space-between;
+padding: 56px 75px;
+position: absolute;
+right: 0;
+bottom: 0;
+
+.sliderText{
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+}
+}
+
+@media (max-width:1024px) {
+  .sliderContainer{
+    background-position: center;
+  }
+}
+
+@media (max-width:540px) {
+  .sliderInfo{
+    width: 320px;
+    height: 120px;
+    padding: 1rem 1rem;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width:430px) {
+  .sliderContainer{
+    width: auto;
+    height: 50vh;
+    margin-top: 100px;
+    background-size: cover;
+    background-position: center;
+
+    .sliderInfo{
+      width: 100%;
+      height: 120px;
+      padding: 1rem 1rem;
+      justify-content: space-around;
+      right: 0;
+      bottom: 0;
+      
+      }
+  }
+}

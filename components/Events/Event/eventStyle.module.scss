@@ -1,0 +1,98 @@
+@import '../../../styles/variables';
+
+.eventContainer{
+
+  display: flex;
+  flex-direction: column;
+
+  
+  .eventHero{
+    width: 1000px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  .header{
+    color:$black;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .desc{
+    width: 1000px;
+    font-size: 20px;
+    line-height: 32px;
+    color: $black;
+    margin-bottom: 1rem;
+    p{
+    }
+    br{
+      display: none;
+    }
+  }
+}
+
+@media (max-width:2530px){
+  .eventContainer{
+    .eventHero{
+      width: 900px;
+    }
+    .desc{
+      width: 900px;
+    }
+  }
+}
+
+@media (max-width:2350px){
+  .eventContainer{
+    .eventHero{
+      width: 700px;
+    }
+    .desc{
+      width: 700px;
+    }
+  }
+}
+
+@media (max-width:2120px){
+  .eventContainer{
+    .eventHero{
+      width: 800px;
+    }
+    .desc{
+      width:800px;
+    }
+  }
+}
+
+@media (max-width:1920px){
+  .eventContainer{
+    .eventHero{
+      width: 700px;
+    }
+    .desc{
+      width:700px;
+    }
+  }
+}
+
+@media (max-width:1650px){
+  .eventContainer{
+    .eventHero{
+      width: 600px;
+    }
+    .desc{
+      width:600px;
+    }
+  }
+}
+
+@media (max-width:1440px){
+  .eventContainer{
+    .eventHero{
+      width: 100%;
+    }
+    .desc{
+      width:100%;
+    }
+  }
+}

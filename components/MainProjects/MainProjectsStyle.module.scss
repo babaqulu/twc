@@ -1,0 +1,352 @@
+@import '../../styles/variables';
+
+.mainContainer{
+  width: 100%;
+  padding: 0 15rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+
+  .hero{
+    width: 1000px;
+    object-fit: cover;
+  }
+
+  .header{
+    color: $blue;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  .secondaryHeader{
+    font-size: 24px;
+    color: $black;
+    font-weight: 700;
+  }
+
+  .rightContainer{
+    
+
+    .logo{
+      height: 64px;
+      width: auto;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .rightInsideContainer{
+    display: flex;
+
+    .moreBtn{
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      width: 120px;
+      text-decoration: none;
+      color: $primary-color;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+      &:hover{
+        font-weight: 600;
+      }
+
+      .moreIcon{
+        filter: $primary-Iconcolor;
+      }
+    }
+
+    .pointsDesc{
+      width: 300px;
+      height: max-content;
+      padding: 2rem 1rem 0 0;
+      border-top: 1px solid $gray;
+      margin-top: 10px;
+      margin-bottom: 2rem;
+    }
+
+    .pointsDescActiveSm{
+      display: none;
+    }
+
+    .pointsDescActive{
+      width: 300px;
+      height: max-content;
+      padding: 2rem 1rem 0 0;
+      border-top: 1px solid $gray;
+      margin-top: 10px;
+      margin-bottom: 5rem;
+    }
+
+
+    .steps{
+      margin-left: 3rem;
+      .stepsDesc{
+        width: 350px;
+        //height: 311px;
+        padding: 2rem 2rem 1rem 2rem;
+        border: 1px solid $gray;
+        margin-top: 10px;
+
+        ul{
+
+          li{
+            margin-bottom: 5px;
+            font-size: 19px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+
+
+
+  }
+}
+
+@media (max-width:2250px){
+  .mainContainer{
+    .hero{
+      width: 900px;
+    }
+  }
+}
+
+@media (max-width:2120px){
+  .mainContainer{
+    padding: 0 5rem;
+  }
+}
+
+@media (max-width:1815px){
+  .mainContainer{
+    .hero{
+      width: 800px;
+    }
+  }
+}
+
+@media (max-width:1700px){
+  .mainContainer{
+    .hero{
+      width: 600px;
+    }
+  }
+}
+
+@media (max-width:1530px){
+  .mainContainer{
+    .hero{
+      width: 500px;
+    }
+  }
+}
+
+@media (max-width:1400px){
+  .mainContainer{
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+
+    .header{
+      height: max-content;
+    }
+    .hero{
+      width: 100%;
+      height: 500px;
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      top: 0;
+      padding: 0 5rem;
+      opacity: 0.1;
+    }
+
+    .rightContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 2rem auto 0 auto;
+
+      .smWrapper{
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .rightInsideContainer{
+
+        .pointsDescActive{
+          margin-bottom: 1rem;
+        }
+        .stepsDesc{
+          width: max-content;
+          height: max-content;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1188px) {
+  .mainContainer{
+
+    .header{
+      height: max-content;
+    }
+
+    .rightContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 2rem auto 0 auto;
+
+      .smWrapper{
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .rightInsideContainer{
+
+        .pointsDescActive{
+          margin-bottom: 1rem;
+        }
+        .stepsDesc{
+          width: max-content;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:1080px){
+  .mainContainer{
+    padding: 2rem 2rem;
+
+    .hero{
+      padding: 0 2rem;
+    }
+    .rightContainer{
+      margin:0;
+
+      .smWrapper{
+        gap: 2rem;
+      }
+      .rightInsideContainer{
+        //gap: 8rem;
+      }
+    }
+  }
+}
+
+@media (max-width:1024px){
+  .mainContainer{
+    margin-bottom: 3rem;
+    .hero{
+      height: 80v;
+    }
+    .rightContainer{
+      padding: 0 2rem;
+
+      .header{
+        font-size: 36px;
+        margin-bottom: 1rem;
+      }
+      .rightInsideContainer{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+
+        .secondaryHeader{
+          font-weight: 500;
+          font-size: 20px;
+        }
+
+        .pointsDesc{
+          display: none;
+        }
+        .pointsDescActive{
+          display: none;
+        }
+
+        .moreBtn{
+          display: none;
+        }
+        .pointsDescActiveSm{
+          display: flex;
+          
+        }
+
+        .steps{
+          margin: 0;
+          .stepsDesc{
+            padding: 1rem 1rem 1rem 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:670px){
+  .hero{
+    display: none;
+  }
+  .mainContainer{
+    max-width: 100%;
+    margin-bottom: 1rem;
+    .rightContainer{
+      width: 100%;
+      height: unset;
+      padding: 0;
+      gap: 0.5rem;
+      .smWrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+        .header{
+          font-size: 28px;
+          height: unset;
+          margin: 0;
+        }
+        .logo{
+          height: 32px;
+          width: auto;
+          margin-bottom: 0;
+          margin-top: 0.5rem;
+        }
+      }
+
+
+      .rightInsideContainer{
+        width: unset;
+        .points{
+
+          max-width: 100%;
+          .pointsDescActiveSm{
+            max-width: 100%;
+            font-size: 16px;
+          }
+        }
+        .steps{
+          width: unset;
+          .stepsDesc{
+            width: unset;
+            ul{
+              li{
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

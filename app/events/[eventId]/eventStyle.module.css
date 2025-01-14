@@ -1,0 +1,146 @@
+.eventNav {
+  width: 100%;
+  height: 67px;
+  display: block;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 0 10rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 5rem;
+  margin: 5rem 0;
+}
+.wrapper .descImg {
+  width: 100%;
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 5rem;
+}
+.wrapper .eventHeader {
+  font-size: clamp(1.5rem, 2vw + 0.8rem, 4rem);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.wrapper .eventDesc {
+  font-size: 18px;
+  color: #878787;
+  line-height: 26px;
+}
+.wrapper .eventDesc h1 h2 h3 h4 {
+  font-size: 27px;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+.wrapper .latestEvents {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .latestEvents .cardHeader {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.wrapper .latestEvents .eventsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.wrapper .latestEvents .latestCardLink {
+  height: 90px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.wrapper .latestEvents .latestCardLink .latestCardImg {
+  width: 90px;
+  height: 90px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 1rem;
+}
+.wrapper .latestEvents .latestCardText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.wrapper .latestEvents .latestCardText .date {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #878787;
+}
+.wrapper .latestEvents .latestCardText .title {
+  font-size: 16px;
+  color: #171717;
+}
+.wrapper .latestEvents .latestCardText .titleSm {
+  display: none;
+  font-size: 16px;
+  color: #171717;
+}
+
+@media (max-width: 1440px) {
+  .wrapper {
+    gap: 2rem;
+    padding: 0 5rem;
+  }
+  .wrapper .latestEvents .trendsList .latestCardLink .latestCardText .title {
+    display: none;
+  }
+  .wrapper .latestEvents .trendsList .latestCardLink .latestCardText .titleSm {
+    display: inline-block;
+  }
+}
+@media (max-width: 1040px) {
+  .wrapper {
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 912px) {
+  .wrapper {
+    flex-direction: column;
+    margin: 3rem 0;
+  }
+  .wrapper .descImg {
+    height: 40vh;
+    margin-bottom: 2rem;
+  }
+  .wrapper .latestEvents {
+    width: 100%;
+    height: auto;
+  }
+  .wrapper .latestEvents .eventsList {
+    width: 100%;
+    gap: 2rem;
+  }
+  .wrapper .latestEvents .eventsList .latestCardLink {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .latestEvents .eventsList .latestCardLink .latestCardImg {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .wrapper .latestEvents .eventsList .latestCardLink .latestCardText {
+    gap: 1rem;
+  }
+  .wrapper .latestEvents .eventsList .latestCardLink .latestCardText .title {
+    display: inline-block;
+    font-size: 26px;
+    font-size: clamp(1rem, 1vw + 0.5rem, 2rem);
+    font-weight: 400;
+  }
+  .wrapper .latestEvents .eventsList .latestCardLink .latestCardText .titleSm {
+    display: none;
+  }
+}/*# sourceMappingURL=eventStyle.module.css.map */

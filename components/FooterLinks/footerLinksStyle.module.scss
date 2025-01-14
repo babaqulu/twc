@@ -1,0 +1,35 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .header{
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    color: rgba(255, 255, 255, 0.739);
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width:540px) {
+  .container{
+    width: 153px;
+  }
+  
+}
+
+@media (max-width: 344px) {
+  .container{
+    width: 120px;
+  }
+  
+}
+
+@media (max-width: 430px) {
+  .container{
+    width: 120px;
+  }
+  
+}

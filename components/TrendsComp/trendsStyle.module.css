@@ -1,0 +1,106 @@
+.trendsContainer {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  background-color: rgba(249, 247, 247, 0.6980392157);
+  margin-bottom: 4rem;
+}
+.trendsContainer .trendsHero {
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.trendsContainer .trendsDesc {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 10rem;
+  padding-right: 5rem;
+}
+.trendsContainer .trendsDesc .headline {
+  color: #000046;
+  font-size: 36px;
+  font-weight: 400;
+}
+.trendsContainer .trendsDesc .desc {
+  margin: 10px 0;
+  max-width: 700px;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #878787;
+}
+.trendsContainer .trendsDesc .moreLink {
+  margin-top: 2rem;
+  text-decoration: none;
+  color: #01AB8D;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.trendsContainer .trendsDesc .moreLink .moreIcon {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}
+
+@media (max-width: 1024px) {
+  .trendsContainer {
+    height: 340px;
+  }
+  .trendsContainer .trendsHero {
+    height: 340px;
+  }
+  .trendsContainer .trendsDesc {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 1080px) {
+  .trendsContainer {
+    gap: 2rem;
+  }
+  .trendsContainer .trendsDesc {
+    padding-right: 2rem;
+  }
+  .trendsContainer .trendsDesc .headline {
+    font-size: 32px;
+  }
+  .trendsContainer .trendsDesc .desc {
+    margin: 0;
+    font-size: 18px;
+    line-height: 26px;
+    width: unset;
+  }
+}
+@media (max-width: 912px) {
+  .trendsContainer {
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 600px) {
+  .trendsContainer {
+    flex-direction: column;
+    gap: 1rem;
+    height: unset;
+  }
+  .trendsContainer .trendsHero {
+    width: 100%;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .trendsContainer .trendsDesc {
+    padding: 0 2rem;
+    padding-bottom: 1rem;
+  }
+  .trendsContainer .trendsDesc .headline {
+    font-size: 26px;
+  }
+  .trendsContainer .trendsDesc .desc {
+    gap: 0.5rem;
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    width: unset;
+  }
+}/*# sourceMappingURL=trendsStyle.module.css.map */

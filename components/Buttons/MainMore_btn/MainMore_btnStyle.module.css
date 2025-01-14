@@ -1,0 +1,15 @@
+.btn_style {
+  width: 120px;
+  text-decoration: none;
+  color: #01AB8D;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.btn_style:hover {
+  border-bottom: 1px solid #01AB8D;
+}
+
+.moreIcon {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(1979%) hue-rotate(145deg) brightness(100%) contrast(99%);
+}/*# sourceMappingURL=MainMore_btnStyle.module.css.map */

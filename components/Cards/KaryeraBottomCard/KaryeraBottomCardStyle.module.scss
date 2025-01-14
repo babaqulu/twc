@@ -1,0 +1,140 @@
+@import  '../../../styles/variables';
+
+.mainContainer{
+  width: 406px;
+  height: max-content;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: $white;
+  text-decoration: none;
+  z-index: 1;
+
+
+  .imagesContainer{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bgImg{
+    width: 100%;
+    height: 250px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 0;
+    object-fit: cover;
+  }
+
+  .img{
+    width: 90%;
+    height: 216px;
+    z-index: 2;
+    object-fit: cover;
+  }
+
+  .title{
+    font-size: 28px;
+    font-weight: 500;
+    color: $black;
+    margin: 0 2rem;
+    margin-top: 1rem;
+    
+  }
+}
+
+@media (max-width: 1440px){
+  .mainContainer{
+    width: 306px;
+    height: max-content;
+    justify-content: unset;
+    padding-bottom: 2rem;
+
+    .imagesContainer{
+      width: 100%;
+      height: 221px;
+      .bgImg{
+        width: 100%;
+        height: 221px;
+      }
+  
+      .img{
+        width: 70%;
+        height: 170px;
+      }
+    }
+
+    .title{
+      font-size: 22px;
+      margin-top: 1rem;
+    }
+
+  }
+}
+
+@media (max-width: 1280px){
+  .mainContainer{
+    width: 250px;
+    height: max-content;
+    justify-content: unset;
+    padding-bottom: 2rem;
+
+    .imagesContainer{
+      width: 100%;
+      height: 160px;
+      .bgImg{
+        width: 100%;
+        height: 160px;
+      }
+  
+      .img{
+        width: 70%;
+        height: 120px;
+      }
+    }
+
+    .title{
+      font-size: 18px;
+      margin-top: 1rem;
+    }
+
+  }
+}
+
+@media (max-width:853px){
+  .mainContainer{
+    width: 100%;
+    height: max-content;
+    // display: flex;
+    position: static;
+
+    .imagesContainer{
+      height: max-content;
+      .bgImg{
+        display: none;
+      }
+      .img{
+
+        width: 100%;
+      }
+    }
+    .title{
+      font-size: 24px;
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media (max-width:430px){
+  .mainContainer{
+    .title{
+      font-size: 18px;
+      margin: 2rem 1rem 1rem 1rem;
+    }
+  }
+}

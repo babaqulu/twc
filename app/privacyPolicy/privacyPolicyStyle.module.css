@@ -1,0 +1,103 @@
+.main {
+  margin-bottom: 160px;
+}
+.main .privacyNav {
+  width: 100%;
+  height: 67px;
+  display: block;
+}
+
+.insideContainer {
+  padding: 0 11rem;
+}
+.insideContainer .mainheader {
+  font-size: 52px;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.insideContainer .info {
+  border-radius: 5px;
+  background-color: rgba(242, 242, 242, 0.3764705882);
+  padding: 49px 146px 49px 49px;
+}
+.insideContainer .info .header {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 500;
+  color: #171717;
+}
+.insideContainer .info .header .desc {
+  font-size: 18px;
+  color: #878787;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.insideContainer .info .desc {
+  font-size: 18px;
+  color: #878787;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.insideContainer .infoInner h2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 500;
+  color: #171717;
+}
+.insideContainer .infoInner h2 p {
+  font-size: 18px;
+  color: #878787;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.insideContainer .infoInner p {
+  font-size: 18px;
+  color: #878787;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 912px) {
+  .insideContainer {
+    padding: 0 5rem;
+  }
+  .insideContainer .info {
+    padding: 49px 50px 49px 50px;
+  }
+}
+@media (max-width: 344px) {
+  .insideContainer .info .header {
+    font-size: 20px;
+  }
+  .insideContainer .info .header .desc {
+    font-size: 18px;
+  }
+  .insideContainer .info .desc {
+    font-size: 18px;
+  }
+}
+@media (max-width: 430px) {
+  .insideContainer {
+    padding: 0 2rem;
+  }
+  .insideContainer .mainheader {
+    font-size: 42px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .insideContainer .info {
+    padding: 20px 20px 20px 20px;
+  }
+  .insideContainer .info .header {
+    font-size: 16px;
+  }
+  .insideContainer .info .header .desc {
+    font-size: 14px;
+  }
+  .insideContainer .info .desc {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=privacyPolicyStyle.module.css.map */

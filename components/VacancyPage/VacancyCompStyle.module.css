@@ -1,0 +1,129 @@
+.vacancy {
+  padding: 0 11rem;
+  margin-top: 86px;
+}
+.vacancy .vacancyMainHeader {
+  font-size: 52px;
+  font-weight: 400;
+  margin-bottom: 86px;
+  margin-left: 49px;
+  padding-right: 30rem;
+  color: #171717;
+}
+@media (max-width: 1280px) {
+  .vacancy .vacancyMainHeader {
+    padding-right: 10rem;
+  }
+}
+.vacancy .jobInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 49px 146px 49px 49px;
+  background-color: rgba(242, 242, 242, 0.3764705882);
+}
+.vacancy .jobInfo .contact {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-self: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.vacancy .jobInfo .who {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.vacancy .jobInfo .who .whoText {
+  font-size: 18px;
+  font-weight: 400;
+  color: #878787;
+}
+.vacancy .jobInfo .jobAbout {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  white-space: pre-line;
+}
+.vacancy .jobInfo .duties {
+  margin-bottom: 40px;
+  list-style-position: inside;
+}
+.vacancy .jobInfo .important {
+  margin-bottom: 40px;
+  list-style-position: inside;
+}
+.vacancy .jobInfo .social {
+  margin-bottom: 40px;
+  list-style-position: inside;
+}
+.vacancy .jobInfo .about {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 160px;
+}
+.vacancy .jobInfo .vacancyHeaders {
+  font-size: 18px;
+  font-weight: 500;
+}
+.vacancy .jobInfo .vacancyTexts {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  list-style-position: inside;
+  color: #878787;
+}
+.vacancy .jobInfo .vacancyTexts strong {
+  font-weight: 500;
+  color: #171717;
+}
+
+@media (max-width: 1024px) {
+  .vacancy {
+    padding: 0 2rem;
+  }
+  .vacancy .vacancyMainHeader {
+    padding-right: 0;
+    margin-left: 20px;
+    margin-bottom: 2rem;
+  }
+  .vacancy .jobInfo {
+    padding: 2rem;
+  }
+}
+@media (max-width: 820px) {
+  .vacancy {
+    margin-top: 2rem;
+  }
+  .vacancy .vacancyMainHeader {
+    font-size: 36px;
+  }
+  .vacancy .jobInfo .vacancyTexts {
+    font-size: 16px;
+  }
+}
+@media (max-width: 430px) {
+  .vacancy {
+    padding: 0 1rem;
+  }
+  .vacancy .vacancyMainHeader {
+    margin: 0px;
+    margin: 4rem 0;
+    font-size: 24px;
+  }
+  .vacancy .jobInfo {
+    padding: 1rem 1rem;
+  }
+  .vacancy .jobInfo .vacancyTexts {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=VacancyCompStyle.module.css.map */

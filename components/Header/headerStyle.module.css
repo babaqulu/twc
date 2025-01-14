@@ -1,0 +1,285 @@
+.theHeader {
+  color: #000046;
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.theHeader::before {
+  content: "";
+  margin: 0 0 0 15rem;
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 50%;
+  width: 500px;
+  height: 1px;
+  background-color: #878787;
+}
+.theHeader::after {
+  content: "";
+  margin: 0 15rem 0 0;
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 50%;
+  width: 500px;
+  height: 1px;
+  background-color: #878787;
+}
+
+.theCompHeader {
+  color: #000046;
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  position: relative;
+  text-align: center;
+}
+.theCompHeader::before {
+  content: "";
+  position: absolute;
+  left: 5rem;
+  top: 50%;
+  width: 450px;
+  height: 1px;
+  background-color: #878787;
+  margin-left: 5rem;
+}
+.theCompHeader::after {
+  content: "";
+  position: absolute;
+  right: 5rem;
+  top: 50%;
+  width: 450px;
+  height: 1px;
+  background-color: #878787;
+}
+
+.thePageHeader {
+  color: #000046;
+  font-size: clamp(2rem, 2vw + 1.5rem, 3rem);
+  font-weight: 600;
+  margin-bottom: 4rem;
+  position: relative;
+  text-align: center;
+}
+.thePageHeader::before {
+  content: "";
+  position: absolute;
+  display: block;
+  margin: 0 15rem 0 0;
+  left: 0;
+  top: 50%;
+  width: 30%;
+  height: 1px;
+  background-color: #878787;
+}
+.thePageHeader::after {
+  content: "";
+  position: absolute;
+  display: block;
+  margin: 0 0 0 15rem;
+  right: 0;
+  top: 50%;
+  width: 30%;
+  height: 1px;
+  background-color: #878787;
+}
+
+@media (max-width: 2120px) {
+  .theHeader::before {
+    content: "";
+    margin: 0 0 0 5rem;
+  }
+  .theHeader::after {
+    content: "";
+    margin: 0 5rem 0 0;
+  }
+  .theCompHeader::before {
+    content: "";
+    margin: 0 5rem 0 0;
+  }
+  .theCompHeader::after {
+    content: "";
+    margin: 0 0 0 5rem;
+  }
+  .thePageHeader::before {
+    content: "";
+    margin: 0 5rem 0 0;
+  }
+  .thePageHeader::after {
+    content: "";
+    margin: 0 0 0 5rem;
+  }
+}
+@media (max-width: 1570px) {
+  .theHeader::before {
+    content: "";
+    width: 300px;
+  }
+  .theHeader::after {
+    content: "";
+    width: 300px;
+  }
+  .theCompHeader::before {
+    content: "";
+    width: 300px;
+  }
+  .theCompHeader::after {
+    content: "";
+    width: 300px;
+  }
+  .thePageHeader::before {
+    content: "";
+    width: 300px;
+  }
+  .thePageHeader::after {
+    content: "";
+    width: 300px;
+  }
+}
+@media (max-width: 1440px) {
+  .theCompHeader::before {
+    content: "";
+    width: 250px;
+  }
+  .theCompHeader::after {
+    content: "";
+    width: 250px;
+  }
+}
+@media (max-width: 1350px) {
+  .theHeader::before {
+    content: "";
+    width: 200px;
+  }
+  .theHeader::after {
+    content: "";
+    width: 200px;
+  }
+  .theCompHeader::before {
+    content: "";
+    width: 200px;
+  }
+  .theCompHeader::after {
+    content: "";
+    width: 200px;
+  }
+  .thePageHeader::before {
+    content: "";
+    width: 200px;
+  }
+  .thePageHeader::after {
+    content: "";
+    width: 200px;
+  }
+}
+@media (max-width: 1280px) {
+  .theCompHeader::before {
+    content: "";
+    left: 2rem;
+    width: 150px;
+  }
+  .theCompHeader::after {
+    content: "";
+    right: 2rem;
+    width: 150px;
+  }
+}
+@media (max-width: 1150px) {
+  .theHeader::before {
+    content: "";
+    width: 200px;
+  }
+  .theHeader::after {
+    content: "";
+    width: 200px;
+  }
+  .thePageHeader::before {
+    content: "";
+    width: 100px;
+  }
+  .thePageHeader::after {
+    content: "";
+    width: 100px;
+  }
+  .theCompHeader::before {
+    content: "";
+    left: 2rem;
+    width: 150px;
+  }
+  .theCompHeader::after {
+    content: "";
+    right: 2rem;
+    width: 150px;
+  }
+}
+@media (max-width: 1080px) {
+  .theHeader::before {
+    content: "";
+    margin: 0 0 0 2rem;
+  }
+  .theHeader::after {
+    content: "";
+    margin: 0 2rem 0 0;
+  }
+  .thePageHeader::before {
+    content: "";
+    margin: 0 2rem 0 0;
+  }
+  .thePageHeader::after {
+    content: "";
+    margin: 0 0 0 2rem;
+  }
+  .theCompHeader::before {
+    content: "";
+    display: none;
+  }
+  .theCompHeader::after {
+    content: "";
+    display: none;
+  }
+}
+@media (max-width: 950px) {
+  .theHeader::before {
+    content: "";
+    display: none;
+  }
+  .theHeader::after {
+    content: "";
+    display: none;
+  }
+  .theCompHeader::before {
+    content: "";
+    display: none;
+  }
+  .theCompHeader::after {
+    content: "";
+    display: none;
+  }
+  .thePageHeader::before {
+    content: "";
+    display: none;
+  }
+  .thePageHeader::after {
+    content: "";
+    display: none;
+  }
+}
+@media (max-width: 430px) {
+  .theHeader {
+    font-size: 30px;
+    margin-bottom: 2rem;
+  }
+  .theCompHeader {
+    font-size: 30px;
+  }
+}
+@media (max-width: 344px) {
+  .theCompHeader {
+    font-size: 28px;
+  }
+}/*# sourceMappingURL=headerStyle.module.css.map */

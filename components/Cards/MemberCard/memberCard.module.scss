@@ -1,0 +1,98 @@
+@import '../../../styles/variables';
+
+.cardContainer{
+  width: 312px;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+
+  .cardImg{
+    background-size: cover;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border: 23px solid $white;
+  }
+
+  .userInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 0 0 0 23px;
+
+    .userName{
+      font-size: 27px;
+      font-weight: 400;
+      color: $black;
+    }
+
+    .userDesc{
+      font-size: 20px;
+      font-weight: 400;
+      color: $gray;
+      line-height: 26px;
+      white-space: pre-line;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .cardContainer{
+    width: 250px;
+    padding: 0;
+
+
+    .cardImg{
+      width: 250px;
+      object-fit: cover;
+      border: 15px solid $white;
+
+    }
+
+    .userInfo{
+      margin-bottom: 20px;
+      margin-left: 10px;
+
+      .userName{
+        font-size: 22px;
+      }
+      .userDesc{
+        font-size: 16px;
+      }
+    }
+
+    .cardLinkContainer{
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+}
+
+@media (max-width:912px) {
+  .cardContainer{
+    box-shadow:none;
+    width: 220px;
+    align-items: flex-start;
+
+    .cardImg{
+      width: 220px;
+      margin-bottom: 0.6rem;
+      border: none;
+    }
+
+    .userInfo{
+      width: 100%;
+      margin-left: 0;
+      padding: 0;
+
+
+      .userName{
+        font-size: 18px;
+      }
+    }
+
+
+  }
+}

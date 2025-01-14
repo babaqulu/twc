@@ -1,0 +1,35 @@
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 50px;
+  border: 2px solid #8B8B8B;
+}
+.logoContainer .logo {
+  height: auto;
+  width: 188px;
+}
+@media (max-width: 1280px) {
+  .logoContainer {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 912px) {
+  .logoContainer {
+    padding: 1rem 2rem;
+  }
+  .logoContainer .logo {
+    height: 120px;
+    width: auto;
+  }
+}
+@media (max-width: 540px) {
+  .logoContainer {
+    padding: 1rem 1rem;
+  }
+  .logoContainer .logo {
+    height: 70px;
+    width: auto;
+  }
+}/*# sourceMappingURL=clientLogoStyle.module.css.map */

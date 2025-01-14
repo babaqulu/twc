@@ -1,0 +1,127 @@
+.sectionLinkDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-self: self-end;
+  flex-wrap: wrap;
+}
+
+.serviceLinkDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-self: self-end;
+}
+
+.sectionLinkHeader {
+  color: #2b2b2b;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.sectionLinkContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 10px;
+}
+.sectionLinkContainer .link_btn {
+  background-color: transparent;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  padding: 5px;
+  min-width: 47px;
+  max-width: 289px;
+  height: 40px;
+  margin-bottom: 0.2em;
+  color: #01AB8D;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+.sectionLinkContainer .link_btn:hover {
+  border: 1px solid #01AB8D;
+  background-color: #01AB8D;
+  color: #fbfbf9;
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  padding: 5px;
+  height: 40px;
+  width: 70px;
+  margin-bottom: 0.2em;
+  cursor: pointer;
+}
+.backBtn:hover {
+  background-color: #01AB8D;
+}
+.backBtn:hover .backArrow {
+  filter: brightness(100) invert(0);
+}
+.backBtn .backArrow {
+  filter: brightness(0) saturate(100%) invert(62%) sepia(32%) saturate(7028%) hue-rotate(134deg) brightness(88%) contrast(99%);
+  rotate: 180deg;
+}
+
+@media (max-width: 1024px) {
+  .sectionLinkDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-self: self-end;
+  }
+  .sectionLinkDiv .sectionLinkHeader {
+    color: #171717;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .sectionLinkDiv .sectionLinkContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .serviceLinkDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-self: self-end;
+  }
+  .serviceLinkDiv .sectionLinkHeader {
+    color: #171717;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .serviceLinkDiv .sectionLinkContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+@media (max-width: 430px) {
+  .sectionLinkDiv .sectionLinkContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+  }
+  .serviceLinkDiv .sectionLinkContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+  }
+}
+@media (max-width: 340px) {
+  .mainDiv .sectionLinkContainer .link_btn {
+    text-align: left;
+    font-weight: 400;
+  }
+}/*# sourceMappingURL=BussinessLinksStyle.module.css.map */

@@ -1,0 +1,26 @@
+.main{
+  width: 30%;
+  border-bottom: 2px solid #BEBEBD;
+  margin-bottom: 50px;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:hover.main{
+  border: none;
+  border-bottom: 2px solid #505050;
+}
+
+
+.search{
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 10px;
+&::placeholder{
+    font-size: 18px;
+    color: #878787;
+  }
+
+}

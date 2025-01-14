@@ -1,0 +1,310 @@
+.main {
+  max-width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.sectionContainer {
+  padding: 0 15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15rem;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+.sectionContainer .sectionTextDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sectionContainer .sectionTextDiv .sectionTittle {
+  color: #000046;
+  font-weight: 600;
+  line-height: 75px;
+  font-size: 53px;
+  margin-bottom: 20px;
+}
+.sectionContainer .sectionTextDiv .sectionParagraph {
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 21px;
+  width: 555px;
+}
+@media (max-width: 1280px) {
+  .sectionContainer {
+    padding: 0 3rem;
+    gap: 10rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .main {
+    margin-bottom: 0rem;
+  }
+  .articlesSection {
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 2rem;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+  .articlesSection .articlesContainer {
+    justify-content: center;
+    width: 60%;
+    height: auto;
+    scale: 0.8;
+  }
+  .articlesSection .articlesContainer .sideArticlesContainer {
+    justify-content: center;
+  }
+}
+@media (max-width: 1024px) {
+  .sectionContainer {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 8rem;
+  }
+  .sectionContainer .sectionTextDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .sectionContainer .sectionTextDiv .sectionParagraph {
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 21px;
+    width: 555px;
+  }
+  .articlesSection {
+    width: 100%;
+    height: auto;
+    padding: 20px 20px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: c;
+  }
+  .articlesSection .articlesInfo {
+    margin-top: 10px;
+  }
+  .articlesSection .articlesInfo .articlesHeader {
+    margin-bottom: 10px;
+  }
+  .articlesSection .articlesInfo .articlesText {
+    margin-bottom: 10px;
+  }
+  .articlesSection .articlesContainer {
+    width: unset;
+    height: unset;
+    scale: unset;
+    scale: 0.8;
+  }
+  .articlesSection .articlesContainer .sideArticlesContainer {
+    justify-content: center;
+  }
+}
+@media (max-width: 912px) {
+  .sectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0rem;
+  }
+  .articlesSection {
+    width: 100%;
+    height: auto;
+    padding: 20px 20px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .articlesSection .articlesInfo {
+    margin-top: 10px;
+  }
+  .articlesSection .articlesInfo .articlesHeader {
+    margin-bottom: 10px;
+  }
+  .articlesSection .articlesInfo .articlesText {
+    margin-bottom: 10px;
+  }
+  .articlesSection .articlesContainer {
+    width: unset;
+    height: unset;
+    scale: unset;
+    scale: 0.8;
+  }
+  .articlesSection .articlesContainer .sideArticlesContainer {
+    justify-content: center;
+  }
+}
+@media (max-height: 600px) {
+  .sectionContainer {
+    margin-top: 20rem;
+  }
+}
+@media (max-height: 550px) {
+  .sectionContainer {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 540px) {
+  .sectionContainer .sectionTextDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .sectionContainer .sectionTextDiv .sectionTittle {
+    font-weight: 400;
+    line-height: 64px;
+    font-size: 42px;
+    width: 400px;
+    margin-bottom: 50px;
+  }
+  .sectionContainer .sectionTextDiv .sectionParagraph {
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 21px;
+    width: auto;
+  }
+  .articlesSection {
+    gap: 3rem;
+  }
+  .articlesSection .articlesContainer {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    scale: initial;
+    gap: 2rem;
+  }
+  .articlesSection .articlesContainer .sideArticlesContainer {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (max-width: 430px) {
+  .sectionContainer {
+    padding: 0 1rem;
+  }
+  .sectionContainer .sectionTextDiv .sectionTittle {
+    font-weight: 400;
+    line-height: 36px;
+    font-size: 32px;
+    width: auto;
+    margin-bottom: 50px;
+  }
+  .articlesSection {
+    gap: 1rem;
+  }
+  .articlesSection .articlesInfo .articlesText {
+    font-size: 26px;
+  }
+  .articlesSection .articlesContainer {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    scale: initial;
+    gap: 2rem;
+  }
+  .articlesSection .articlesContainer .sideArticlesContainer {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (max-width: 430px) {
+  .articlesSection {
+    gap: 2rem;
+  }
+  .articlesSection .articlesInfo .articlesText {
+    font-size: 26px;
+  }
+  .articlesSection .articlesContainer {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    scale: initial;
+    gap: 2rem;
+  }
+  .articlesSection .articlesContainer .sideArticlesContainer {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (max-width: 2120px) {
+  .sectionContainer {
+    padding: 0 5rem;
+  }
+}
+@media (max-width: 1188px) {
+  .sectionContainer {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .sectionContainer .sectionTextDiv .sectionParagraph {
+    width: 100%;
+  }
+}
+@media (max-width: 1080px) {
+  .sectionContainer {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 1440px) {
+  .main {
+    height: 50vh;
+  }
+}
+@media (max-height: 550px) {
+  .main {
+    height: 100vh;
+  }
+}
+@media (max-width: 340px) {
+  .homeContainer .sectionContainer {
+    max-width: 100%;
+    padding: 0 1rem;
+    gap: 2rem;
+  }
+  .homeContainer .sectionContainer .sectionTittle {
+    width: unset;
+    font-size: 26px;
+  }
+  .homeContainer .sectionContainer .sectionParagraph {
+    width: unset;
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=page.module.css.map */

@@ -1,0 +1,32 @@
+{
+  "name": "twc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.13.1",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^6.1.5",
+    "@mui/material-nextjs": "^6.1.5",
+    "@next/third-parties": "^15.0.2",
+    "next": "^14.2.16",
+    "nookies": "^2.5.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sass": "^1.80.4",
+    "sharp": "^0.33.5",
+    "swiper": "^11.1.15",
+    "use-debounce": "^10.0.4"
+  },
+  "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.9.3",
+    "eslint": "^9",
+    "eslint-config-next": "15.0.2"
+  }
+}

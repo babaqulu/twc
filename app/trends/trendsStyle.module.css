@@ -1,0 +1,71 @@
+.trendsMain .hero {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 3rem;
+}
+.trendsMain .trendsInner {
+  padding: 0 15rem;
+}
+.trendsMain .trendsInner .trendsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: 1fr;
+  justify-content: space-between;
+  gap: 5rem;
+  margin-bottom: 6rem;
+  position: relative;
+}
+.trendsMain .trendsInner .trendsGrid .card {
+  border-bottom: 1px solid #878787;
+}
+.trendsMain .trendsInner .trendsGrid .card:nth-last-child(-n+2) {
+  border: none;
+}
+.trendsMain .trendsInner .trendsGrid .card2 {
+  border-bottom: 1px solid #878787;
+}
+.trendsMain .trendsInner .trendsGrid .card2:nth-last-child(-n+3) {
+  border: none;
+}
+.trendsMain .trendsInner .trendsGrid .card3 {
+  border-bottom: 1px solid #878787;
+}
+.trendsMain .trendsInner .trendsGrid .card3:nth-last-child(-n+1) {
+  border: none;
+}
+.trendsMain .trendsInner .trendsGrid .divider {
+  width: 2px;
+  height: 100%;
+  background-color: #D9D9D9;
+  position: absolute;
+  left: 50%;
+}
+
+@media (max-width: 2160px) {
+  .trendsMain .trendsInner {
+    padding: 0 5rem;
+  }
+  .trendsMain .trendsGrid {
+    gap: 2rem;
+  }
+}
+@media (max-width: 1040px) {
+  .trendsMain .trendsInner {
+    padding: 0 2rem;
+  }
+  .trendsMain .trendsInner .trendsGrid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .trendsMain .trendsInner .trendsGrid .divider {
+    display: none;
+  }
+}
+@media (max-width: 300px) {
+  .trendsMain .trendsInner {
+    padding: 0 0.5rem;
+  }
+}/*# sourceMappingURL=trendsStyle.module.css.map */

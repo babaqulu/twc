@@ -1,0 +1,18 @@
+.homeBlogs {
+  padding: 0 15rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 2120px) {
+  .homeBlogs {
+    padding: 0 5rem;
+  }
+}
+@media (max-width: 1080px) {
+  .homeBlogs {
+    padding: 0 2rem;
+  }
+}/*# sourceMappingURL=blogSwiperStyle.module.css.map */
