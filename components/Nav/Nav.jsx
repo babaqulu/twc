@@ -204,15 +204,14 @@ function Nav({
               .filter((a) => a.subcategory.length === 0)
               .map((a) => (
                 <Link
-                  href={
-                    a.name === "Məqalələr"
-                      ? "/blogs"
-                      : a.name === "Karyera"
-                      ? "/karyera"
-                      : a.name === "Əlaqə"
-                      ? "/elaqe"
-                      : "/"
-                  }
+                  href={a.link}
+                  // a.name === "Məqalələr"
+                  // ? "/blogs"
+                  // : a.name === "Karyera"
+                  // ? "/karyera"
+                  // : a.name === "Əlaqə"
+                  // ? "/elaqe"
+                  // : "/"
                   className={`${navStyles.navListLink} ${navStyles[navListLinkColor]}`}
                   key={a.id}
                 >
@@ -250,19 +249,18 @@ function Nav({
                 {c.subcategory.map((d) => (
                   <Link
                   
-                    href={
-                      d.name === "Məxfilik siyasəti"
-                        ? "/privacyPolicy"
-                        : d.name === "FAQ"
-                        ? "/faq"
-                        : d.name === "Haqqımızda"
-                        ? "/haqqimizda"
-                        : d.name === "Partnyor və müştərİlərimiz"
-                        ? "/haqqimizda/partners-clients"
-                        : c.name === "Konsaltinq Xidmətləri"
-                        ? `/haqqimizda/xidmetler/${d.id}`
-                        : "/"
-                    }
+                    href={d.link}
+                    // d.name === "Məxfilik siyasəti"
+                    // ? "/privacyPolicy"
+                    // : d.name === "FAQ"
+                    // ? "/faq"
+                    // : d.name === "Haqqımızda"
+                    // ? "/haqqimizda"
+                    // : d.name === "Partnyor və müştərİlərimiz"
+                    // ? "/haqqimizda/partners-clients"
+                    // : c.name === "Konsaltinq Xidmətləri"
+                    // ? `/haqqimizda/xidmetler/${d.id}`
+                    // : "/"
                     onClick={() => {
                       setActiveDropdown(null);
                     }}
