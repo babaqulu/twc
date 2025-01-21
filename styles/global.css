@@ -90,6 +90,9 @@ a[href^=tel] {
 .mySwiperMembers .swiper-wrapper {
   margin-bottom: 2rem;
 }
+.mySwiperMembers .swiper-wrapper .swiper-slide {
+  margin-right: 1px !important;
+}
 @media (max-width: 550px) {
   .mySwiperMembers .swiper-wrapper .swiper-slide {
     display: flex !important;

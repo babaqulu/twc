@@ -127,9 +127,9 @@ async function About() {
         }
 
 
-      <Header headline={'PARTNYOR VƏ MÜŞTƏRİLƏRİMİZ'} theCompHeader={'theCompHeader'}/>
+      {/* <Header headline={'PARTNYOR VƏ MÜŞTƏRİLƏRİMİZ'} theCompHeader={'theCompHeader'}/> */}
       
-      <Partners title={partnersBottomData.title} desc={partnersBottomData.description} img={partnersBottomData.banner} link={'haqqimizda/partners-clients'}/>
+      {/* <Partners title={partnersBottomData.title} desc={partnersBottomData.description} img={partnersBottomData.banner} link={'haqqimizda/partners-clients'}/> */}
 
       </div>
 

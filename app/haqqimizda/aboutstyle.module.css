@@ -15,7 +15,7 @@
   font-weight: 600;
 }
 .innerContainer .desc {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 400;
   color: #878787;
   line-height: 43px;
@@ -104,7 +104,7 @@
   }
   .innerContainer .desc {
     padding: 0 2rem;
-    font-size: 24px;
+    font-size: 20px;
   }
   .innerContainer .membersContainer {
     padding: 0 2rem;
@@ -113,7 +113,7 @@
 @media (max-width: 540px) {
   .innerContainer .desc {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 18px;
   }
   .innerContainer .membersContainer {
     margin: 3rem;

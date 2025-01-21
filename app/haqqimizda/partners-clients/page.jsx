@@ -57,7 +57,14 @@ async function page() {
 
       <div className={partnersClientsStyle.innerWrapper}>
         
+      <div className={`${partnersClientsStyle.clientsWrapper} ${partnersClientsStyle.wrapper}`}>
+      <h1 className={`${partnersClientsStyle.clientsTitle} ${partnersClientsStyle.title}`}>{clientsPageData.title}</h1>
+      <div className={`${partnersClientsStyle.clientsDesc} ${partnersClientsStyle.desc}`} dangerouslySetInnerHTML={{ __html: `${clientsPageData.text}` }}></div>
       
+      <ClientsSlide clientsData={clientsData}/>
+      
+      
+      </div>
 
       <div className={`${partnersClientsStyle.partnersWrapper} ${partnersClientsStyle.wrapper}`}>
 
@@ -88,14 +95,8 @@ async function page() {
         height={200}/>
       </div>
 
-      <div className={`${partnersClientsStyle.clientsWrapper} ${partnersClientsStyle.wrapper}`}>
-      <h1 className={`${partnersClientsStyle.clientsTitle} ${partnersClientsStyle.title}`}>{clientsPageData.title}</h1>
-      <div className={`${partnersClientsStyle.clientsDesc} ${partnersClientsStyle.desc}`} dangerouslySetInnerHTML={{ __html: `${clientsPageData.text}` }}></div>
-      
-      <ClientsSlide clientsData={clientsData}/>
-      
-      
-      </div>
+
+
       </div>
     </div>
   )

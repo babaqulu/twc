@@ -86,6 +86,7 @@ a[href^="tel"] {
     margin-bottom: 2rem;
 
     .swiper-slide{
+      margin-right: 1px !important;
       @media (max-width:550px){
         display: flex !important;
         align-items: center !important;

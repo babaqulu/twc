@@ -86,8 +86,9 @@ export default async function Home() {
     </section>
 
     <Trends />
-    <EventsComp eventsData={eventsData}/>
     <MainProjects mainProjectData={mainProjectData}/>
+    <EventsComp eventsData={eventsData}/>
+
 
     <KaryeraComp/>
       <Header headline={'MƏQALƏLƏR'}/>

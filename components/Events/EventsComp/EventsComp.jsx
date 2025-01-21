@@ -17,7 +17,7 @@ function eventsComp({eventsData, event}) {
       <div className={eventsCompStyle.eventsContainer}>
       <Event  header={eventsData[0].title} eventHero={eventsData[0].image} desc={eventsData[0].description.slice(0,200) + '...'} link={`events/${eventsData[0].id}`}/>
       <div className={eventsCompStyle.line}></div>
-      <Event header={eventsData[1].title} eventHero={eventsData[1].image} desc={eventsData[1].description.slice(0,190) + '...'} link={`events/${eventsData[1].id}`}/>
+      {/* <Event header={eventsData[1].title} eventHero={eventsData[1].image} desc={eventsData[1].description.slice(0,190) + '...'} link={`events/${eventsData[1].id}`}/> */}
       </div>
 
       <Link
