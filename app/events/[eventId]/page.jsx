@@ -76,7 +76,7 @@ export default async function Event({ params }) {
               <Link
               key={event.id}
               className={eventStyle.latestCardLink}
-              href={`/trends/${event.id}`}>
+              href={`/events/${event.id}`}>
               <Image
               width={2000}
               height={2000}
@@ -85,7 +85,7 @@ export default async function Event({ params }) {
               src={event.image}/>
               <div className={eventStyle.latestCardText}>
               {/* <p className={trendStyle.date}>{trend.created_date}</p> */}
-              <p className={eventStyle.title}>{event.title}</p>
+              <p className={eventStyle.title}>{event.title.slice(0,50) + '...'}</p>
               <p className={eventStyle.titleSm}>{event.title.slice(0,20) + '...'}</p>
               </div>
               

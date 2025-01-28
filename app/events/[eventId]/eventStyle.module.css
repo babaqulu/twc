@@ -55,6 +55,7 @@
   text-decoration: none;
   display: flex;
   align-items: center;
+  margin-bottom: 2rem;
 }
 .wrapper .latestEvents .latestCardLink .latestCardImg {
   width: 90px;
