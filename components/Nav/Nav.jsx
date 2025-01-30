@@ -242,6 +242,7 @@ function Nav({
           .filter((b) => b.name === activeDropdown)
           .map((c) => (
             <>
+            
               <h3 key={c.id} className={navStyles.dropDownTitle}>
                 {c.name}
               </h3>
@@ -249,18 +250,12 @@ function Nav({
                 {c.subcategory.map((d) => (
                   <Link
                   
-                    href={d.link}
-                    // d.name === "Məxfilik siyasəti"
-                    // ? "/privacyPolicy"
-                    // : d.name === "FAQ"
-                    // ? "/faq"
-                    // : d.name === "Haqqımızda"
-                    // ? "/haqqimizda"
-                    // : d.name === "Partnyor və müştərİlərimiz"
-                    // ? "/haqqimizda/partners-clients"
-                    // : c.name === "Konsaltinq Xidmətləri"
-                    // ? `/haqqimizda/xidmetler/${d.id}`
-                    // : "/"
+                    href={
+
+                      c.name === "Konsaltinq xidmətləri"
+                      ? `/haqqimizda/xidmetler/${d.id}`
+                      : d.link
+                    }
                     onClick={() => {
                       setActiveDropdown(null);
                     }}
@@ -268,6 +263,7 @@ function Nav({
                     className={navStyles.dropDownSelection}
                   >
                     {d.name}
+                    
                   </Link>
                 ))}
               </div>
