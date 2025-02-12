@@ -11,7 +11,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 // import required modules
-import { Pagination, FreeMode } from 'swiper/modules';
+import {Autoplay, Pagination, FreeMode } from 'swiper/modules';
 
 function blogCardSwiper({blogsData}) {
 
@@ -28,9 +28,15 @@ function blogCardSwiper({blogsData}) {
 
         <Swiper
       pagination={pagination}
-      modules={[FreeMode,Pagination]}
+      modules={[Autoplay, FreeMode,Pagination]}
       className='mySwiperBlogCards'
       slidesPerView={3}
+      loop={true}
+      speed={6000}
+      autoplay={{
+        delay: 0,
+        disableOnInteraction: true,
+      }}
       breakpoints={{
         1920 : {
           slidesPerView: 5 

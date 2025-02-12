@@ -36,22 +36,24 @@ async function page() {
         heroImg={partnersPageData.banner}
         heroText={partnersPageData.banner_title}
         //Navbar props
-        contactTextColor={'contactTextWhite'}
-        linkedinIcon={linkedinIconWhite}
-        facebookIcon={facebookIconWhite}
-        instagramIcon={instagramIconWhite}
-        socialmediaIconColor={'socialmediaIconColorWhite'}
-        Logo={LogoWhite}
-        logoImgColor={'logoImgWhite'}
-        navListLinkColor={'navListLinkWhite'}
-        serviceListLinkColor={'serviceListLinkWhite'}
-        heroTitle={'heroTitleWhite'}
-        language_btnColor={'language_btnWhite'}
-        languageIconColor={'languageIconWhite'}
-        languageDropIconColor={'languageDropIconWhite'}
-        languageIcon={LanguageIconWhite}
-        languageDropArrow={DropArrowWhite}
-        infoContainerColor={'infoContainerWhite'}
+      contactTextColor={'contactTextWhite'}
+      linkedinIcon={linkedinIconWhite}
+      facebookIcon={facebookIconWhite}
+      instagramIcon={instagramIconWhite}
+      socialmediaIconColor={'socialmediaIconColorWhite'}
+      Logo={LogoWhite}
+      logoImgColor={'logoImgWhite'}
+      navListLinkColor={'navListLinkWhite'}
+      serviceListLinkColor={'serviceListLinkWhite'}
+      heroTitle={'heroTitleWhite'}
+      language_btnColor={'language_btnWhite'}
+      languageIconColor={'languageIconWhite'}
+      languageDropIconColor={'languageDropIconWhite'}
+      languageIcon={LanguageIconWhite}
+      languageDropArrow={DropArrowWhite}
+      infoContainerColor={'infoContainerWhite'}
+      dropIcon={DropArrowWhite}
+        dropIconColor={'downArrowWhite'}
           />
       </hero>
 

@@ -156,7 +156,7 @@ import BackArrow from '../../public/icons/longRightDark.png'
     <div className={BussinessLinksStyle.sectionLinkContainer}>
 
       {servicesData
-      .filter((a) => a.name === 'Konsaltinq Xidmətləri')
+      .filter((a) => a.name === 'Konsaltinq xidmətləri')
       .map((b)=>
         
         b.subcategory.map((c)=>

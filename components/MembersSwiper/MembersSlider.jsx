@@ -11,7 +11,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 // import required modules
-import { Pagination, FreeMode } from 'swiper/modules';
+import {Autoplay, Pagination, FreeMode } from 'swiper/modules';
 
 import MemberCard from "@/components/Cards/MemberCard/MemberCard"
 
@@ -30,9 +30,16 @@ function MembersSlider({workersData}) {
 
     <Swiper
   pagination={pagination}
-  modules={[FreeMode,Pagination]}
+  modules={[Autoplay,FreeMode,Pagination]}
   className='mySwiperMembers'
   slidesPerView={4}
+  loop={true}
+  speed={6000}
+  autoplay={{
+    delay: 0,
+    disableOnInteraction: false,
+  }}
+  // speed={6000}
   breakpoints={{
     1024 : {
       slidesPerView: 3

@@ -198,15 +198,17 @@ a[href^="tel"] {
 
     .swiper-slide{
       width: 100% !important;
-      @media (max-width:521px){
-        height: unset !important;
-      }
+
     }
-    @media (max-width:521px){
-      height: unset !important;
+    @media (max-width:1024px){
+      height: max-content !important;
     }
+    // @media (max-width:521px){
+    //   height: unset !important;
+    // }
   }
   .swiper-pagination{
+    display: none !important;
     width: 100% !important;
     height: 10px !important;
     display: flex !important;
@@ -216,6 +218,7 @@ a[href^="tel"] {
     justify-content: center !important;
     
     .swiper-pagination-bullet{
+      display: none !important;
     width: 10px !important;
     height: 10px !important;  
   }
@@ -227,10 +230,7 @@ a[href^="tel"] {
     margin-bottom: 1rem !important;
     
   }
-  @media (max-width:521px){
-    bottom: 0 !important;
-    margin-bottom: 0 !important;
-  }
+
 
   }
 
@@ -239,13 +239,10 @@ a[href^="tel"] {
     padding-bottom: 10px !important;
   }
   @media (max-width:1024px){
-    height: 600px !important;
+    height: max-content !important;
     padding-bottom: 10px !important;
   }
-  @media (max-width:521px){
-    width: unset !important;
-    height: unset !important;
-  }
+
 }
 
 .loadingDiv{

@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 
   .hero{
     width: 1000px;
@@ -38,6 +38,7 @@
 
   .rightInsideContainer{
     display: flex;
+    height: max-content;
 
     .moreBtn{
       cursor: pointer;
@@ -59,9 +60,9 @@
       }
     }
 
+
     .pointsDesc{
       width: 300px;
-      height: max-content;
       padding: 2rem 1rem 0 0;
       border-top: 1px solid $gray;
       margin-top: 10px;
@@ -86,10 +87,11 @@
       margin-left: 3rem;
       .stepsDesc{
         width: 350px;
-        //height: 311px;
+        height: 311px;
         padding: 2rem 2rem 1rem 2rem;
         border: 1px solid $gray;
         margin-top: 10px;
+        overflow-y: scroll;
 
         ul{
 
@@ -157,14 +159,7 @@
       height: max-content;
     }
     .hero{
-      width: 100%;
-      height: 500px;
-      position: absolute;
-      z-index: -1;
-      left: 0;
-      top: 0;
-      padding: 0 5rem;
-      opacity: 0.1;
+      display: none;
     }
 
     .rightContainer{
@@ -184,68 +179,20 @@
           margin-bottom: 1rem;
         }
         .stepsDesc{
-          width: max-content;
-          height: max-content;
+          width: 100%;
+          height: 200px;
         }
       }
     }
   }
 }
 
-@media (max-width: 1188px) {
-  .mainContainer{
 
-    .header{
-      height: max-content;
-    }
-
-    .rightContainer{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      margin: 2rem auto 0 auto;
-
-      .smWrapper{
-        display: flex;
-        justify-content: space-between;
-      }
-
-      .rightInsideContainer{
-
-        .pointsDescActive{
-          margin-bottom: 1rem;
-        }
-        .stepsDesc{
-          width: max-content;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width:1080px){
-  .mainContainer{
-    padding: 2rem 2rem;
-
-    .hero{
-      padding: 0 2rem;
-    }
-    .rightContainer{
-      margin:0;
-
-      .smWrapper{
-        gap: 2rem;
-      }
-      .rightInsideContainer{
-        //gap: 8rem;
-      }
-    }
-  }
-}
 
 @media (max-width:1024px){
   .mainContainer{
     margin-bottom: 3rem;
+    padding: 0;
     .hero{
       height: 80v;
     }
@@ -285,6 +232,7 @@
           margin: 0;
           .stepsDesc{
             padding: 1rem 1rem 1rem 2rem;
+            height: 300px;
           }
         }
       }
@@ -302,7 +250,7 @@
     .rightContainer{
       width: 100%;
       height: unset;
-      padding: 0;
+      padding: 0 2rem;
       gap: 0.5rem;
       .smWrapper{
         display: flex;

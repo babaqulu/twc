@@ -114,26 +114,6 @@ async function Karyera() {
             BottomBg={a.background}/>
           ))
         }
-                {
-          carrierBottomData.map((a)=>(
-            <KaryeraBottomCard 
-            key={a.id}
-            link={`karyera/advanntages/${a.id}`}
-            img={a.image}
-            title={a.title}
-            BottomBg={a.background}/>
-          ))
-        }
-                {
-          carrierBottomData.map((a)=>(
-            <KaryeraBottomCard 
-            key={a.id}
-            link={`karyera/advanntages/${a.id}`}
-            img={a.image}
-            title={a.title}
-            BottomBg={a.background}/>
-          ))
-        }
       </div>
     </div>
   )

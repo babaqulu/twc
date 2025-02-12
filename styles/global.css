@@ -213,17 +213,14 @@ a[href^=tel] {
 .mySwiperProjects .swiper-wrapper .swiper-slide {
   width: 100% !important;
 }
-@media (max-width: 521px) {
-  .mySwiperProjects .swiper-wrapper .swiper-slide {
-    height: unset !important;
-  }
-}
-@media (max-width: 521px) {
+@media (max-width: 1024px) {
   .mySwiperProjects .swiper-wrapper {
-    height: unset !important;
+    height: -moz-max-content !important;
+    height: max-content !important;
   }
 }
 .mySwiperProjects .swiper-pagination {
+  display: none !important;
   width: 100% !important;
   height: 10px !important;
   display: flex !important;
@@ -233,6 +230,7 @@ a[href^=tel] {
   justify-content: center !important;
 }
 .mySwiperProjects .swiper-pagination .swiper-pagination-bullet {
+  display: none !important;
   width: 10px !important;
   height: 10px !important;
 }
@@ -244,12 +242,6 @@ a[href^=tel] {
     margin-bottom: 1rem !important;
   }
 }
-@media (max-width: 521px) {
-  .mySwiperProjects .swiper-pagination {
-    bottom: 0 !important;
-    margin-bottom: 0 !important;
-  }
-}
 @media (max-width: 1400px) {
   .mySwiperProjects {
     height: 500px !important;
@@ -258,14 +250,9 @@ a[href^=tel] {
 }
 @media (max-width: 1024px) {
   .mySwiperProjects {
-    height: 600px !important;
+    height: -moz-max-content !important;
+    height: max-content !important;
     padding-bottom: 10px !important;
-  }
-}
-@media (max-width: 521px) {
-  .mySwiperProjects {
-    width: unset !important;
-    height: unset !important;
   }
 }
 

@@ -12,7 +12,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 // import required modules
-import { Pagination, FreeMode } from 'swiper/modules';
+import {Autoplay, Pagination, FreeMode } from 'swiper/modules';
 
 import Image from 'next/image'
 import MainProjectsStyle from './MainProjectsStyle.module.scss'
@@ -32,9 +32,15 @@ function MainProjects({mainProjectData}) {
     
           <Swiper
         pagination={pagination}
-        modules={[FreeMode,Pagination]}
+        modules={[Autoplay, FreeMode,Pagination]}
         className='mySwiperProjects'
         slidesPerView={1}
+        loop={true}
+        speed={6000}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+        }}
       >
 
 
