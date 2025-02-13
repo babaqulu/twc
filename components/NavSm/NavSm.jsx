@@ -203,7 +203,7 @@ function NavSm({
 
           {/* Small devices services drop down */}
             {consaltingServicesData
-              .filter((a) => a.subcategory.length > 0 && a.name === "Konsaltinq Xidmətləri")
+              .filter((a) => a.subcategory.length > 0 && a.name === "Konsaltinq xidmətləri")
               .map((a) => (
                 <li
                   className={
@@ -279,14 +279,7 @@ function NavSm({
               .map((a) => (
                 <Link
                   href={
-                    a.name === "Məqalələr"
-                      ? "/blogs"
-                      : a.name === "Karyera"
-                      ? "/karyera"
-                      : a.name === "Əlaqə"
-                      ? "/elaqe"
-                      : "/"
-                  }
+                    a.link}
                   className={`${navStyles.navListLink} ${navStyles[navListLinkColor]}`}
                   key={a.id}
                 >
