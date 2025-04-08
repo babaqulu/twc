@@ -125,7 +125,7 @@ function Nav({
           </div>
 
           <div className={navStyles.socialmedia}>
-            <Link href='/'>
+            <Link href='https://www.linkedin.com/company/think-wise-business-consulting/?viewAsMember=true'>
             <Image
               width={10}
               height={10}
@@ -134,7 +134,7 @@ function Nav({
               alt="Linkedin Icon"
               />
             </Link>
-            <Link href='/'>
+            <Link href='https://www.facebook.com/thinkwiseazerbaijan/'>
             <Image
               width={6}
               height={12}
@@ -143,7 +143,7 @@ function Nav({
               alt="Facebook Icon"
               />
             </Link>
-            <Link href='/'>
+            <Link href=' https://www.instagram.com/twc.az/?next=%2F'>
             <Image
               height={11}
               width={11}

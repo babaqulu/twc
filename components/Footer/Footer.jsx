@@ -47,9 +47,9 @@ async function Footer() {
           ATittle1={'Linkedin'}
           ATittle2={'Facebook'}
           ATittle3={'Instagram'}
-          link1={'https://www.linkedin.com/'}
-          link2={'https://www.facebook.com/home.php'}
-          link3={'https://www.instagram.com/'}/>
+          link1={'https://www.linkedin.com/company/think-wise-business-consulting/?viewAsMember=true'}
+          link2={'https://www.facebook.com/thinkwiseazerbaijan/'}
+          link3={'https://www.instagram.com/twc.az/?next=%2F'}/>
 
           <FooterLinks
           header={'ƏLAQƏ'}
