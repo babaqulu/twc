@@ -2,9 +2,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import MainMore_btnStyle from "./MainMore_btnStyle.module.scss"
-import Arrow from "../../../public/icons/longRight.png"
+import Arrow from "@/public/icons/longRight.png"
 
-function MainMore_btn({link}) {
+function MainMore_btn({link, locale}) {
+  console.log(locale);
+  
   return (
     <div className={MainMore_btnStyle.btn_container}>
     <Link href={`/${link}`}
@@ -14,7 +16,7 @@ function MainMore_btn({link}) {
       src={Arrow}
       alt="More"
       />
-      Daha çox
+      {locale === 'az' ? "Daha çox" : "More"}
     </Link>
     </div>
 

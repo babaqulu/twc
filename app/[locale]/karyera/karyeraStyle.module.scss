@@ -1,0 +1,238 @@
+@import '@/styles/variables';
+.karyeraMain{
+
+  .innerMain{
+    position: relative;
+    padding: 5rem 0;
+
+    .title{
+      text-align: center;
+      font-size: 48px;
+      color: $blue;
+      font-weight: 600;
+      margin-bottom: 3rem;
+    }
+    .desc{
+      text-align: start;
+      font-size: 30px;
+      font-weight: 400;
+      color: $gray;
+      padding: 0 20rem;
+      margin-bottom: 5rem;
+    }
+    .internsDiv{
+      display: flex;
+      justify-content: space-between;
+      padding: 0 15rem;
+      margin-bottom: 5.5rem;
+    }
+
+    .bgKaryera{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      object-fit: cover;
+      top: 0;
+      z-index: -4;
+      background-size: cover;
+      filter: blur(50px);
+
+    }
+  }
+
+  .vacancies{
+    padding: 0 35rem;
+    margin-bottom: 7rem;
+
+    .vacancyTitle{
+      text-align: center;
+      font-size: 42px;
+      font-weight: 400;
+      color: $black;
+      margin-bottom: 5rem;
+    }
+  }
+
+  .bottomLinks{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 20rem;
+    background-color: $beige;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width:2200px){
+  .karyeraMain{
+
+    .vacancies{
+      padding: 0 25rem;
+    }
+  }
+}
+
+@media (max-width:1920px){
+  .karyeraMain{
+
+    .innerMain{
+      .desc{
+        padding: 0 10rem;
+      }
+      .internsDiv{
+        padding: 0 10rem;
+      }
+    }
+
+    .vacancies{
+      padding: 0 15rem;
+    }
+
+    .bottomLinks{
+      padding: 2rem 10rem;
+    }
+  }
+}
+
+@media (max-width: 1600px){
+  .karyeraMain{
+
+    .bottomLinks{
+      padding: 2rem 5rem;
+    }
+  }
+
+}
+
+@media (max-width:1440px){
+  .karyeraMain{
+
+    .innerMain{
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-top: 4rem;
+      .desc{
+        padding: 0 5rem;
+      }
+      .internsDiv{
+        padding: 0 5rem;
+      }
+    }
+
+    .vacancies{
+      padding: 0 10rem;
+    }
+
+  }
+}
+
+@media (max-width:1280px){
+  .karyeraMain{
+    .innerMain{
+      .desc{
+        font-size: 24px;
+      }
+      .internsDiv{
+        padding: 0 2rem;
+      }
+    }
+    .vacancies{
+      padding: 0 5rem;
+    }
+  }
+}
+
+@media (max-width: 940px){
+  .karyeraMain{
+
+    .bottomLinks{
+      padding: 2rem 2rem;
+    }
+  }
+
+}
+
+@media (max-width:920px){
+  .karyeraMain{
+    .innerMain{
+      .internsDiv{
+        padding: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        gap: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width:853px){
+  .karyeraMain{
+
+    .bottomLinks{
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+}
+
+@media (max-width:768px){
+  .karyeraMain{
+    .innerMain{
+
+      .title{
+        font-size: 36px;
+      }
+      .desc{
+        padding: 0 2rem;
+      }
+      .internsDiv{
+        width: max-content;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+      }
+    }
+    .vacancies{
+      width: 100%;
+      padding: 0 2rem;
+      margin-bottom: 4rem;
+      .vacancyTitle{
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}
+
+@media (max-width:630px){
+  .karyeraMain{
+    .innerMain{
+      .desc{
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width:430px){
+  .karyeraMain{
+    .innerMain{
+      .title{
+        font-size: 26px;
+        width: 100%;
+        padding: 0 1rem;
+      }
+      .internsDiv{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 2rem;
+      }
+    }
+    .vacancies{
+      width: 100%;
+      .vacancyTitle{
+        margin-bottom: 2rem;
+        font-size: 2rem;
+      }
+    }
+  }
+}

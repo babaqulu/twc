@@ -6,13 +6,13 @@ import eventsCompStyle from './eventsCompStyles.module.scss'
 
 import Header from '@/components/Header/Header';
 
-function eventsComp({eventsData, event}) {
+function eventsComp({eventsData, locale}) {
   
 
   return (
     <div className={eventsCompStyle.mainContainer}>
 
-      <Header theCompHeader={'theCompHeader'} headline={'TƏDBİR VƏ XƏBƏRLƏR'}/>
+      <Header theCompHeader={'theCompHeader'} headline={locale === 'az' ? 'TƏDBİR VƏ XƏBƏRLƏR' : 'EVENTS AND NEWS'}/>
 
       <div className={eventsCompStyle.eventsContainer}>
       <Event  header={eventsData[0].title} eventHero={eventsData[0].image} desc={eventsData[0].description.slice(0,200) + '...'} link={`events/${eventsData[0].id}`}/>
@@ -24,7 +24,7 @@ function eventsComp({eventsData, event}) {
       className={eventsCompStyle.eventLink}
       href='/events'
       >
-      Hamısına bax
+      {locale === 'az' ? "Hamısına bax" : "See all"}
       </Link>
     </div>
 

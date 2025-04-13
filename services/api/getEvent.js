@@ -1,13 +1,14 @@
 
 
 
-export default async function getEvent(eventId){
+export default async function getEvent(eventId,locale){
+  const prefix = locale === 'en' ? '/en' : '';
   const res = await fetch 
-  (`https://twc.efgroup.az/event/${eventId}`, { next: { revalidate: 5 } })
+  (`https://twc.efgroup.az${prefix}/event/${eventId}`, { next: { revalidate: 5 } })
 
   if (!res.ok) {
     const errorBody = await res.text(); // Capture error details
-    console.error('Error response body:', errorBody);
+
     throw new Error(`Failed to fetch data: ${res.statusText}`);
   }
   return res.json()

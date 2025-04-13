@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  
+
 
     images: {
       domains: ['twc.efgroup.az'], // Add any domains you want to allow

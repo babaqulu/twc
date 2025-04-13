@@ -13,7 +13,7 @@ import 'swiper/css/pagination';
 // import required modules
 import {Autoplay, Pagination, FreeMode } from 'swiper/modules';
 
-function blogCardSwiper({blogsData}) {
+function blogCardSwiper({blogsData, locale}) {
 
   const pagination = {
     clickable: true,
@@ -34,12 +34,12 @@ function blogCardSwiper({blogsData}) {
       loop={true}
       speed={6000}
       autoplay={{
-        delay: 0,
-        disableOnInteraction: true,
+        delay: 1000,
+        disableOnInteraction: false,
       }}
       breakpoints={{
         1920 : {
-          slidesPerView: 5 
+          slidesPerView: 3 
 
         },
         1470 : {
@@ -66,7 +66,7 @@ function blogCardSwiper({blogsData}) {
       (
       <SwiperSlide key={blog.id}>
 
-        <BlogCard key={blog.id} link={`blogs/${blog.id}`} img={blog.image} title={blog.name}
+        <BlogCard locale={locale} key={blog.id} link={`blogs/${blog.id}`} img={blog.image} title={blog.name}
         desc={blog.title}/>
       </SwiperSlide>
     ))}

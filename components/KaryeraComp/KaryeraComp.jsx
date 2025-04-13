@@ -6,14 +6,16 @@ import KaryeraStyle from "./karyeraCompstyle.module.scss"
 
 import BlueMore_btn from "../Buttons/BlueMore_btn/MoreBtn";
 
-function Karyera() {
+function Karyera({ locale }) {
+
   return (
     <div
     className={KaryeraStyle.karyeraMainContainer}>
       <div className={KaryeraStyle.headerContainer}>
         <h3 className={KaryeraStyle.karyeraHeader}>
-        KARYERANIZA BİZİMLƏ BAŞLAYIN</h3>
-        <BlueMore_btn link={'karyera'}/>
+        {locale === 'az' ? "KARYERANIZA BİZİMLƏ BAŞLAYIN" : "START YOUR CAREER WITH US"}
+        </h3>
+        <BlueMore_btn  locale={locale} link={'karyera'}/>
       </div>
       <div className={KaryeraStyle.heroContainer}>
         <Image

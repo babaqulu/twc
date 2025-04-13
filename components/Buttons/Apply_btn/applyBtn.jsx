@@ -4,12 +4,12 @@ import Link from 'next/link'
 import ApplyBtnStyle from "./applyBtnStyle.module.scss"
 import Arrow from "../../../public/icons/longRight.png"
 
-function ApplyBtn({link}) {
+function ApplyBtn({link, locale}) {
   return (
     <div className={ApplyBtnStyle.btn_container}>
     <Link href={`/${link}`}
     className={ApplyBtnStyle.btn_style}>
-      Müraciət et
+      {locale === 'az' ? "Müraciət et" : "Apply"}
       <Image
       className={ApplyBtnStyle.moreIcon}
       src={Arrow}

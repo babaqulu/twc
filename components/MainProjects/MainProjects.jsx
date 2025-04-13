@@ -18,8 +18,8 @@ import Image from 'next/image'
 import MainProjectsStyle from './MainProjectsStyle.module.scss'
 import MainMore_btn from '../Buttons/MainMore_btn/MainMore_btn'
 
-function MainProjects({mainProjectData}) {
-    const [activeDesc, setActiveDesc] = useState(false)
+function MainProjects({mainProjectData, locale}) {
+  const [activeDesc, setActiveDesc] = useState(false)
     
   const pagination = {
     clickable: true,
@@ -61,7 +61,7 @@ function MainProjects({mainProjectData}) {
 
                   <div className={MainProjectsStyle.smWrapper}> 
 
-                  <h3 className={MainProjectsStyle.header}>Əsas Layihələrimiz</h3>
+                  <h3 className={MainProjectsStyle.header}>{locale === 'az' ? "Əsas Layihələrimiz" : "Main Projects"}</h3>
                   <Image
                   width={500}
                   height={500}
@@ -74,7 +74,7 @@ function MainProjects({mainProjectData}) {
                   <div className={MainProjectsStyle.rightInsideContainer}>
                     <div className={MainProjectsStyle.points}>
                       <h3 className={MainProjectsStyle.secondaryHeader}>
-                        Bizim Yanaşmamız:
+                      {locale === 'az' ? "Bizim Yanaşmamız:" : "Our Approach:"}
                       </h3>
                       {activeDesc ? <p className={MainProjectsStyle.pointsDescActive}>{project.our_point}</p>  :
                       <p className={MainProjectsStyle.pointsDesc}>{project.our_point.slice(0,90)+'...'}</p>}
@@ -89,12 +89,13 @@ function MainProjects({mainProjectData}) {
                       src={Arrow}
                       alt="More"
                       />
-                        Daha çox
+                              {locale === 'az' ? "Daha çox" : "More"}
+                              
                         </button>
                     </div>
                     <div className={MainProjectsStyle.steps}>
                       <h3 className={MainProjectsStyle.secondaryHeader}>
-                      Layihənin mərhələləri
+                      {locale==='az' ? "Layihənin mərhələləri" : "Project stages"}
                       </h3>
                       <div className={MainProjectsStyle.stepsDesc} dangerouslySetInnerHTML={{ __html: `${project.project_steps}` }}></div>
                     </div>

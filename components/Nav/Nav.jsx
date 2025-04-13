@@ -11,6 +11,7 @@ import NavSm from "../NavSm/NavSm";
 
 
 function Nav({
+  locale,
   consaltingServicesData,
   linkedinIcon,
   facebookIcon,
@@ -167,7 +168,7 @@ function Nav({
                 className={`${navStyles.navListLink} ${navStyles[navListLinkColor]}`}
                 
               >
-                Əsas səhifə
+                {locale === 'az' ? 'Əsas səhifə' : 'Main page'}
               </Link>
             </li>
             {consaltingServicesData

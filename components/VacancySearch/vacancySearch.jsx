@@ -6,7 +6,7 @@ import SearchIcon from '@/public/icons/search.png'
 import Image from 'next/image';
 import AboutVacancyCard from '../AboutVacancyCard/AboutVacancyCard';
 
-export default function vacancySearch({vacanciesData}) {
+export default function vacancySearch({vacanciesData, locale}) {
 
   const [searchParam, SetSearchParams] = useState('') 
 
@@ -18,10 +18,10 @@ export default function vacancySearch({vacanciesData}) {
     <div className={VacanySearchStyle.main}>
       
       <div className={VacanySearchStyle.inputWrapper}>
-      <label className={VacanySearchStyle.inputLabel} htmlFor="vsearch">Gələcək Karyeranı Konsaltİnqdə Başla</label>
+      <label className={VacanySearchStyle.inputLabel} htmlFor="vsearch">{locale === 'az' ? "Gələcək Karyeranı Konsaltİnqdə Başla" : "Start Your Future Career in Consulting"}</label>
 
       <div className={VacanySearchStyle.input}>
-      <input className={VacanySearchStyle.searchInput} id='vsearch' onChange={handleChange} name='vsearch' placeholder='İş axtar'  type="text" />
+      <input className={VacanySearchStyle.searchInput} id='vsearch' onChange={handleChange} name='vsearch' placeholder={locale === 'az' ? 'İş axtar': 'Search job'}  type="text" />
       <Image
       className={VacanySearchStyle.submit}
       src={SearchIcon}

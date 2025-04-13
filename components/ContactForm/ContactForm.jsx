@@ -7,7 +7,7 @@ import ContactFormStyle from "./ContactFormStyle.module.scss";
 import PaperClip from "../../public/icons/paperClip.png";
 import Arrow from "../../public/icons/longRight.png";
 
-function ContactForm() {
+function ContactForm({locale}) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -38,7 +38,7 @@ function ContactForm() {
       if (response.ok) {
         setSuccess(
           <div className={ContactFormStyle.successContainer}>
-            <p className={ContactFormStyle.success}>Müraciətiniz göndərildi.</p>
+            <p className={ContactFormStyle.success}>{locale==='az' ? "Müraciətiniz göndərildi." : "Your request has been sent."}</p>
           </div>
         );
         setError('');
@@ -71,7 +71,7 @@ function ContactForm() {
             onChange={(e) => setName(e.target.value)}
             className={ContactFormStyle.input}
             type="text"
-            placeholder="Ad və Soyad"
+            placeholder={locale ==='az' ? "Ad və Soyad" : "Name and Surname"}
             required
           />
           <input
@@ -87,7 +87,7 @@ function ContactForm() {
             onChange={(e) => setPhone(e.target.value)}
             className={ContactFormStyle.input}
             type="tel"
-            placeholder="Telefon"
+            placeholder={locale === 'az' ? "Telefon" : "Phonenumber"}
             required
           />
           <input
@@ -95,7 +95,7 @@ function ContactForm() {
             onChange={(e) => setSubject(e.target.value)}
             className={ContactFormStyle.input}
             type="text"
-            placeholder="Mövzu başlığı"
+            placeholder= {locale === 'az' ? "Mövzu başlığı" : "Topic title"}
             required
           />
         
@@ -107,11 +107,11 @@ function ContactForm() {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             className={ContactFormStyle.message}
-            placeholder="Mesaj"
+            placeholder={ locale ==='az' ? "Mesaj" : "Message"}
             required
           ></textarea>
           <label htmlFor="file" className={ContactFormStyle.labelFile}>
-            <p className={ContactFormStyle.label}>Mesaj</p>
+            <p className={ContactFormStyle.label}>{ locale ==='az' ? "Mesaj" : "Message"}</p>
             <Image
               className={ContactFormStyle.paperClip}
               alt="Choose file"
@@ -132,7 +132,7 @@ function ContactForm() {
       </div>
 
       <button type="submit" className={ContactFormStyle.submitButton}>
-            Göndər
+            { locale ==='az' ? "Göndər" : "Send"}
             <Image alt="Submit button" src={Arrow} />
           </button>
 

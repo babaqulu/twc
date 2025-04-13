@@ -2,7 +2,9 @@ import Image from "next/image"
 import MainMore_btn from "../../Buttons/MainMore_btn/MainMore_btn"
 import CardStyle from "./CardStyle.module.scss"
 
-function Card({className, horizontalContainer, horizontalImage, horizontalDesc, descDiv, alt, img, header, desc, shortDesc, link}) {
+function Card({locale, className, horizontalContainer, horizontalImage, horizontalDesc, descDiv, alt, img, header, desc, shortDesc, link}) {
+  
+  
   return (
     <div className={`${CardStyle.container} ${className} ${CardStyle[horizontalContainer]}`}>
       <Image
@@ -18,7 +20,7 @@ function Card({className, horizontalContainer, horizontalImage, horizontalDesc, 
       <p className={`${CardStyle.desc} ${CardStyle[horizontalDesc]}`}>{desc}</p>
 
       <div className={CardStyle[descDiv]} dangerouslySetInnerHTML={{ __html: `${shortDesc}` }}></div>
-      <MainMore_btn link={link}/>
+      <MainMore_btn locale={locale} link={link}/>
       </div>
 
     </div>

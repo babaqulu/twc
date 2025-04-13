@@ -6,7 +6,7 @@ import HeroImg from "../../../public/img/hero_img.jpg"
 
 import MainMore_btn from '../../Buttons/MainMore_btn/MainMore_btn'
 
-function BlogCard({img, alt, title, desc, link}) {
+function BlogCard({locale, img, alt, title, desc, link}) {
   return (
     <div className={BlogCardStyle.wrapper}>
       <Image
@@ -21,7 +21,9 @@ function BlogCard({img, alt, title, desc, link}) {
         <span className={BlogCardStyle.title}>
           {title}
         </span>
-        | MƏQALƏ
+        {locale === 'az' ?
+        "| MƏQALƏ" 
+        : "| BLOGS"}
       </h5>
       <p className={BlogCardStyle.desc}>
         {desc}

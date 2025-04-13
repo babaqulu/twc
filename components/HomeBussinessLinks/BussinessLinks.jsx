@@ -10,7 +10,7 @@ import BackArrow from '../../public/icons/longRightDark.png'
 
 
 
-  function BussinessLinks({servicesData}) {
+  function BussinessLinks({servicesData, locale}) {
   const [serviceBtn, setOpenServiceBtn] = useState(false)
   const [sectionBtn, setOpenSectionBtn] = useState(true)
   
@@ -24,7 +24,7 @@ import BackArrow from '../../public/icons/longRightDark.png'
   {
     sectionBtn &&
     <div className={BussinessLinksStyle.sectionLinkDiv}>
-    <h3 className={BussinessLinksStyle.sectionLinkHeader}>1.Sizin biznes istiqamətiniz?</h3>
+    <h3 className={BussinessLinksStyle.sectionLinkHeader}>{locale === 'az' ? "1.Sizin biznes istiqamətiniz?" : "1.What is your business direction?"}</h3>
     <div className={BussinessLinksStyle.sectionLinkContainer}>
       <button 
       onClick={()=>{
@@ -34,7 +34,7 @@ import BackArrow from '../../public/icons/longRightDark.png'
         }
         
       className={BussinessLinksStyle.link_btn}>
-      Daşınmaz Əmlak
+        {locale === 'az' ? "Daşınmaz Əmlak" : "Real Estate"}
       </button>
       <button 
       onClick={()=>{
@@ -44,6 +44,7 @@ import BackArrow from '../../public/icons/longRightDark.png'
         }
       className={BussinessLinksStyle.link_btn}>
       Enerji
+      {locale === 'az' ? "Enerji" : "Energy"}
       </button>
       <button 
       onClick={()=>{
@@ -52,7 +53,8 @@ import BackArrow from '../../public/icons/longRightDark.png'
       }
         }
       className={BussinessLinksStyle.link_btn}>
-      Maliyyə Servisləri
+        {locale === 'az' ? "Maliyyə Servisləri" : "Financial Services"}
+    
       </button>
       <button 
       onClick={()=>{
@@ -61,7 +63,8 @@ import BackArrow from '../../public/icons/longRightDark.png'
       }
         }
       className={BussinessLinksStyle.link_btn}>
-      Sənaye Məhsulları
+      
+      {locale === 'az' ? "Sənaye Məhsulları" : "Industrial Products"}
       </button>
       <button 
       onClick={()=>{
@@ -70,7 +73,8 @@ import BackArrow from '../../public/icons/longRightDark.png'
       }
         }
       className={BussinessLinksStyle.link_btn}>
-      Texnologiya, Media və Əyləncə
+        {locale === 'az' ? "Texnologiya, Media və Əyləncə" : "Technology, Media and Entertainment"}
+      
       </button>
       <button 
       onClick={()=>{
@@ -79,7 +83,8 @@ import BackArrow from '../../public/icons/longRightDark.png'
       }
         }
       className={BussinessLinksStyle.link_btn}>
-      Transporstasiya  və Logistika
+      
+      {locale === 'az' ? "Transporstasiya  və Logistika" : "Transportation and Logistics"}
       </button>
       <button 
       onClick={()=>{
@@ -88,7 +93,8 @@ import BackArrow from '../../public/icons/longRightDark.png'
       }
         }
       className={BussinessLinksStyle.link_btn}>
-      İstehsal
+      
+      {locale === 'az' ? "İstehsal" : "Production"}
       </button>
       <button 
       onClick={()=>{
@@ -97,7 +103,8 @@ import BackArrow from '../../public/icons/longRightDark.png'
       }
         }
       className={BussinessLinksStyle.link_btn}>
-      Retail
+        {locale === 'az' ? "Retail" : "Retail"}
+      
       </button>
       <button 
       onClick={()=>{
@@ -106,7 +113,7 @@ import BackArrow from '../../public/icons/longRightDark.png'
       }
         }
       className={BussinessLinksStyle.link_btn}>
-      Təchizat
+      {locale === 'az' ? "Təchizat" : "Supply"}
       </button>
       <button 
       onClick={()=>{
@@ -115,7 +122,7 @@ import BackArrow from '../../public/icons/longRightDark.png'
       }
         }
       className={BussinessLinksStyle.link_btn}>
-      Təhsil
+      {locale === 'az' ? "Təhsil" : "Education"}
       </button>
       <button 
       onClick={()=>{
@@ -124,7 +131,7 @@ import BackArrow from '../../public/icons/longRightDark.png'
       }
         }
       className={BussinessLinksStyle.link_btn}>
-      FMCG
+      {locale === 'az' ? "FMCG" : "FMCG"}
       </button>
       <button 
       onClick={()=>{
@@ -133,7 +140,7 @@ import BackArrow from '../../public/icons/longRightDark.png'
       }
         }
       className={BussinessLinksStyle.link_btn}>
-      Tikinti
+      {locale === 'az' ? "Tikinti" : "Construction"}
       </button>
       <button 
       onClick={()=>{
@@ -142,7 +149,7 @@ import BackArrow from '../../public/icons/longRightDark.png'
       }
         }
       className={BussinessLinksStyle.link_btn}>
-      E-commerce
+      {locale === 'az' ? "E-commerce" : "E-commerce"}
       </button>
     </div>
   </div>
@@ -152,7 +159,7 @@ import BackArrow from '../../public/icons/longRightDark.png'
       serviceBtn &&
 
       <div className={BussinessLinksStyle.serviceLinkDiv}>
-    <h3 className={BussinessLinksStyle.sectionLinkHeader}>2.Sizin biznes ehtiyacınız?</h3>
+    <h3 className={BussinessLinksStyle.sectionLinkHeader}>{locale === 'az' ? "2.Sizin biznes ehtiyacınız?" : "2.What is your business need?"}</h3>
     <div className={BussinessLinksStyle.sectionLinkContainer}>
 
       {servicesData

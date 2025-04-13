@@ -4,9 +4,11 @@ import FooterStyle from './footerStyle.module.scss'
 
 import getContact from "@/services/api/getContact"
 
-async function Footer() {
-  const contact = getContact()
-  const contactData = await contact
+async function Footer({ locale }) {
+  
+  const contactData = await getContact(locale)
+  console.log('Footer locale:',locale);
+  
 
   return (
     <div className={FooterStyle.footerContainer}>
@@ -14,7 +16,7 @@ async function Footer() {
       <div className={FooterStyle.innerContainer}>
 
         <div className={FooterStyle.subscribeContainer}>
-          <h1 className={FooterStyle.footerHeader}>Uğura gedən yolda TWC ilə</h1>
+          <h1 className={FooterStyle.footerHeader}>{locale === 'az' ? "Uğura gedən yolda TWC ilə" : "On the road to success with TWC"}</h1>
 
           <div className={FooterStyle.input}>
             <input className={FooterStyle.footerEmail} type="email" placeholder="Email"/>
@@ -24,23 +26,23 @@ async function Footer() {
 
         <div className={FooterStyle.linksContainer}>
           <FooterLinks
-          header={'ÜNVAN'}
+          header={locale==='a' ? 'ÜNVAN' : 'ADDRESS'}
           par1={contactData.address}
           hideShowP={'showP'}
           hideShowL={'hideL'}
           hideShowA={'hideA'}/>
 
           <FooterLinks
-          header={'ŞİRKƏT'}
-          link1Tittle1={'Haqqımızda'}
-          link1Tittle2={'Məxfilik siyasəti'}
+          header={locale === 'az' ? 'ŞİRKƏT' : 'COMPANY'}
+          link1Tittle1={locale === 'az' ? 'Haqqımızda' : 'About us'}
+          link1Tittle2={locale === 'az' ? 'Məxfilik siyasəti' : 'Privacy policy'}
           link1Tittle3={'FAQ'}
           hideShowP={'hideP'}
           hideShowL={'showL'}
           hideShowA={'hideA'}/>
 
           <FooterLinks
-          header={'SOSİAL ŞƏBƏKƏ'}
+          header={locale === 'az' ? 'SOSİAL ŞƏBƏKƏ' : 'SOCIAL MEDIA'}
           hideShowP={'hideP'}
           hideShowL={'hideL'}
           hideShowA={'showA'}
@@ -52,7 +54,7 @@ async function Footer() {
           link3={'https://www.instagram.com/twc.az/?next=%2F'}/>
 
           <FooterLinks
-          header={'ƏLAQƏ'}
+          header={locale === 'az' ? 'ƏLAQƏ' : 'CONTACT'}
           par1={contactData.email_first}
           par2={contactData.number_first}
           par3={contactData.number_second}

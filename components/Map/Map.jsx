@@ -2,7 +2,7 @@
 
 "use client"
 
-import ElaqeStyle from '../../app/elaqe/elaqeStyle.module.scss'
+import ElaqeStyle from '../../app/[locale]/elaqe/elaqeStyle.module.scss'
 function Map() {
   return (
     <div className={ElaqeStyle.map}>

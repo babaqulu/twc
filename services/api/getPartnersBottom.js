@@ -1,7 +1,8 @@
 
 
-export default async function getPartnersBottom(){
-  const res = await fetch ("https://twc.efgroup.az/partner-bottom", { next : { revalidate:50 } })
+export default async function getPartnersBottom(locale){
+  const prefix = locale === 'en' ? '/en' : '';
+  const res = await fetch (`https://twc.efgroup.az${prefix}/partner-bottom`, { next : { revalidate:50 } })
 
   if(!res.ok) throw new Error ('Failed to fetch data')
 

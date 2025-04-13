@@ -8,8 +8,8 @@ import getConsaltingServices from '@/services/api/getConsaltingServices';
 
 
 
-async function Hero({heroImg, heroText, linkedinIcon, facebookIcon, instagramIcon, socialmediaIconColor, Logo, navListLinkColor, serviceListLinkColor, heroTitle, languageIcon, languageDropArrow, languageIconColor, languageDropIconColor, language_btnColor, infoContainerColor, contactTextColor, logoImgColor, dropIcon, dropIconColor }) {
-  const consaltingServicesData = await getConsaltingServices()
+async function Hero({locale, heroImg, heroText, linkedinIcon, facebookIcon, instagramIcon, socialmediaIconColor, Logo, navListLinkColor, serviceListLinkColor, heroTitle, languageIcon, languageDropArrow, languageIconColor, languageDropIconColor, language_btnColor, infoContainerColor, contactTextColor, logoImgColor, dropIcon, dropIconColor }) {
+  const consaltingServicesData = await getConsaltingServices(locale)
 
   // const serviceTitles=[]
   // serviceTitles.push(...consaltingServicesData[1].subcategory)
@@ -30,6 +30,7 @@ async function Hero({heroImg, heroText, linkedinIcon, facebookIcon, instagramIco
       
 
       <Nav
+      locale={locale}
       consaltingServicesData= {consaltingServicesData}
       contactTextColor={contactTextColor}
       linkedinIcon={linkedinIcon}

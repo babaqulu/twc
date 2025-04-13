@@ -1,8 +1,9 @@
 
 
 
-export default async function getVacancies(){
-  const res = await fetch ("https://twc.efgroup.az/vacancies", { next: { revalidate: 5 } })
+export default async function getVacancies(locale){
+  const prefix = locale === 'en' ? '/en' : '';
+  const res = await fetch (`https://twc.efgroup.az${prefix}/vacancies`, { next: { revalidate: 5 } })
 
   if(!res.ok) throw new Error ('Failed to fetch data')
 

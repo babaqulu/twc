@@ -1,7 +1,8 @@
 
 
-export default async function getPrivacy(){
-  const response = await fetch ("https://twc.efgroup.az/privacy", { next: { revalidate: 50 } })
+export default async function getPrivacy(locale){
+  const prefix = locale === 'en' ? '/en' : '';
+  const response = await fetch (`https://twc.efgroup.az${prefix}/privacy`, { next: { revalidate: 50 } })
   return response.json()
 
 }

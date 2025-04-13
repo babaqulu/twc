@@ -4,7 +4,7 @@ import AboutVacancyCardStyle from './AboutVacancyCardStyle.module.scss'
 import Arrow from '../../public/icons/longRight.png'
 import ApplyBtn from '../Buttons/Apply_btn/applyBtn';
 
-function AboutVacancyCard({vacancy, link, jobInfoTextAbout}) {
+function AboutVacancyCard({vacancy, link, jobInfoTextAbout, locale}) {
   return (
     <div className={AboutVacancyCardStyle.cartContainer}>
 
@@ -17,7 +17,7 @@ function AboutVacancyCard({vacancy, link, jobInfoTextAbout}) {
         dangerouslySetInnerHTML={{ __html: jobInfoTextAbout }}
         ></div>
 
-        <ApplyBtn  link={link}/>
+        <ApplyBtn locale={locale} link={link}/>
       </div>
       
     </div>
