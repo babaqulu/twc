@@ -164,8 +164,8 @@ function NavSm({
     >
       {consaltingServicesData
         .filter((a) => a.subcategory.length > 0 && a.name === "Haqqımızda")
-        .map((c) => (
-            <div  className={navStyles.dropDownSelections}>
+        .map((c,indx) => (
+            <div key={indx} className={navStyles.dropDownSelections}>
               {c.subcategory.map((d) => (
                 <Link
                   href={
@@ -235,8 +235,8 @@ function NavSm({
     >
       {consaltingServicesData
         .filter((b) => b.name === activeDropdownServicesSm)
-        .map((c) => (
-            <div  className={navStyles.dropDownSelections}>
+        .map((c, indx) => (
+            <div key={indx} className={navStyles.dropDownSelections}>
               {c.subcategory.map((d) => (
                 <Link
                 
