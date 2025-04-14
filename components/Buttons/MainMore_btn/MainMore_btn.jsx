@@ -5,7 +5,6 @@ import MainMore_btnStyle from "./MainMore_btnStyle.module.scss"
 import Arrow from "@/public/icons/longRight.png"
 
 function MainMore_btn({link, locale}) {
-  console.log(locale);
   
   return (
     <div className={MainMore_btnStyle.btn_container}>

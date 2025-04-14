@@ -252,8 +252,11 @@ function Nav({
                   <Link
                   
                     href={
-
+                      locale === 'az' ?
                       c.name === "Konsaltinq xidmətləri"
+                      ? `/haqqimizda/xidmetler/${d.id}`
+                      : d.link : 
+                      c.name === "Consulting Services"
                       ? `/haqqimizda/xidmetler/${d.id}`
                       : d.link
                     }

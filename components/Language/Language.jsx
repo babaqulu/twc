@@ -22,19 +22,20 @@ function Language({language_btnColor,languageIconColor, languageIcon, languageDr
 
   const toggleLocale = () => {
     const newLocale = currentLocale === 'az' ? 'en' : 'az';
-    const segments = pathname.split('/');
+    const segments = pathname.split('/').filter(Boolean); // boş stringləri çıxar
   
-    // Əgər path locale ilə başlayırsa → onu dəyiş
-    if (segments[1] === 'az' || segments[1] === 'en') {
-      segments[1] = newLocale;
+    // Əgər birinci segment locale-dirsə → onu dəyiş
+    if (segments[0] === 'az' || segments[0] === 'en') {
+      segments[0] = newLocale;
     } else {
-      // Əgər locale path-də yoxdursa (fallback)
+      // Əgər locale yoxdursa, əlavə et
       segments.unshift(newLocale);
     }
   
-    const newPath = segments.join('/');
+    const newPath = '/' + segments.join('/');
     router.replace(newPath, { scroll: false });
   };
+  
   return (
     <div className={navStyles.languageContainer}>
     <button onClick={toggleLocale} className={`${navStyles.language_btn} ${navStyles[language_btnColor]}`}>

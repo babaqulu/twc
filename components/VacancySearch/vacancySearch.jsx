@@ -11,7 +11,7 @@ export default function vacancySearch({vacanciesData, locale}) {
   const [searchParam, SetSearchParams] = useState('') 
 
   const handleChange = e => SetSearchParams(e.target.value.toLowerCase())
-  console.log(vacanciesData.map((vacancy)=>vacancy.title.toLowerCase()));
+
   
   
   return (

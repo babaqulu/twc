@@ -37,6 +37,7 @@ async function page({ params }) {
         heroImg={partnersPageData.banner}
         heroText={partnersPageData.banner_title}
         //Navbar props
+        locale={locale}
       contactTextColor={'contactTextWhite'}
       linkedinIcon={linkedinIconWhite}
       facebookIcon={facebookIconWhite}

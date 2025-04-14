@@ -14,11 +14,6 @@ import BackArrow from '../../public/icons/longRightDark.png'
   const [serviceBtn, setOpenServiceBtn] = useState(false)
   const [sectionBtn, setOpenSectionBtn] = useState(true)
   
-
-
-    
-  
-  
   return (
   <div className={BussinessLinksStyle.mainDiv}>
   {
@@ -162,8 +157,11 @@ import BackArrow from '../../public/icons/longRightDark.png'
     <h3 className={BussinessLinksStyle.sectionLinkHeader}>{locale === 'az' ? "2.Sizin biznes ehtiyacınız?" : "2.What is your business need?"}</h3>
     <div className={BussinessLinksStyle.sectionLinkContainer}>
 
-      {servicesData
-      .filter((a) => a.name === 'Konsaltinq xidmətləri')
+      {locale === 'az' ?
+
+      servicesData
+      .filter((a) => a.name === 'Konsaltinq xidmətləri'
+       )
       .map((b)=>
         
         b.subcategory.map((c)=>
@@ -172,7 +170,20 @@ import BackArrow from '../../public/icons/longRightDark.png'
           ))
           
         )
-      }
+       : 
+        servicesData
+          .filter((a) => a.name === 'Consulting Services'
+           )
+          .map((b)=>
+            
+            b.subcategory.map((c)=>
+              (
+                <BussinesLink_btn key={c.id} text={c.name} link={`haqqimizda/xidmetler/${c.id}`}/>
+              ))
+              
+            )
+          }
+      
       {/* <Link_btn text={'Bazar Araşdırması'} link={'xidmetler/bazarArashdirmasi'}/>
       <Link_btn text={'Biznes Plan və TİƏ'} link={'xidmetler/biznesplan'}/>
       <Link_btn text={'Kapitallaşma'} link={'xidmetler/kapitallashma'}/>

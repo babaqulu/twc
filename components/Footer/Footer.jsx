@@ -7,7 +7,7 @@ import getContact from "@/services/api/getContact"
 async function Footer({ locale }) {
   
   const contactData = await getContact(locale)
-  console.log('Footer locale:',locale);
+
   
 
   return (

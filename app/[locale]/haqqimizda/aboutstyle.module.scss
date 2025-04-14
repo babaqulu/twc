@@ -1,4 +1,4 @@
-@import '../../styles/variables';
+@import '@/styles/variables';
 
 .main {
   display: flex;
@@ -114,7 +114,7 @@
 
   .partnersClients{
     padding: 3rem 0;
-    background-image: url(../../public//img/articlesSectionBG.png);
+    background-image: url(../../../public/img/articlesSectionBG.png);
   }
 }
 

@@ -43,6 +43,7 @@ async function Karyera({ params }) {
       heroImg={carrierPageData.banner}
       heroText={carrierPageData.banner_title}
       //Navbar props
+      locale={locale}
       contactTextColor={'contactTextWhite'}
       linkedinIcon={linkedinIconWhite}
       facebookIcon={facebookIconWhite}

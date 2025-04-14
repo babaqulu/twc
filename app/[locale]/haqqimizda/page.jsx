@@ -3,13 +3,13 @@ import Image from 'next/image';
 import Aboutstyle from "./aboutstyle.module.scss"
 
 //Image
-import linkedinIconWhite from "../../public/icons/linkedin-white.png"
-import facebookIconWhite from "../../public/icons/facebook-white.png"
-import instagramIconWhite from "../../public/icons/instagram-white.png"
-import LogoWhite from "../../public/icons/logoWhite.png"
-import LanguageIconWhite from "../../public/icons/languageWhite.png"
-import DropArrowWhite from "../../public/icons/downArrowWhite.png"
-import BgMembers from '../../public/img/BG.png'
+import linkedinIconWhite from "@/public/icons/linkedin-white.png"
+import facebookIconWhite from "@/public/icons/facebook-white.png"
+import instagramIconWhite from "@/public/icons/instagram-white.png"
+import LogoWhite from "@/public/icons/logoWhite.png"
+import LanguageIconWhite from "@/public/icons/languageWhite.png"
+import DropArrowWhite from "@/public/icons/downArrowWhite.png"
+import BgMembers from '@/public/img/BG.png'
 
 
 //Component
@@ -30,13 +30,14 @@ export const metadata = {
   title: 'About us'
 }
 
-async function About() {
+async function About({params}) {
+  const locale = params?.locale;
 
 
-  const partnersBottomData = await getPartnersBottom()
-  const about = await getAbout()
-  const workersData = await getWorkers()
-  const aboutGridData = await getAboutGrid()
+  const partnersBottomData = await getPartnersBottom(locale)
+  const about = await getAbout(locale)
+  const workersData = await getWorkers(locale)
+  const aboutGridData = await getAboutGrid(locale)
 
   
   return (
@@ -47,6 +48,7 @@ async function About() {
       heroImg={about.banner}
       heroText={about.banner_title}
       //Navbar props
+      locale={locale}
       contactTextColor={'contactTextWhite'}
       linkedinIcon={linkedinIconWhite}
       facebookIcon={facebookIconWhite}
@@ -72,7 +74,7 @@ async function About() {
       <div className={Aboutstyle.innerContainer}>
 
         <div className={Aboutstyle.descContainer}>
-        <h1 className={Aboutstyle.title}>HAQQIMIZDA</h1>
+        <h1 className={Aboutstyle.title}>{locale === 'az' ? "HAQQIMIZDA" : "ABOUT US"}</h1>
         <div className={Aboutstyle.desc} dangerouslySetInnerHTML={{ __html: `${about.about}` }}></div>
         </div>
 
@@ -80,7 +82,7 @@ async function About() {
 
         <div className={Aboutstyle.membersContainer}>
 
-          <Header headline={'KOMANDA'} theCompHeader={'theCompHeader'}/>
+          <Header headline={locale === 'az' ? "KOMANDA" : "TEAM"} theCompHeader={'theCompHeader'}/>
         <MembersSlider workersData={workersData}/>
 
       <Image

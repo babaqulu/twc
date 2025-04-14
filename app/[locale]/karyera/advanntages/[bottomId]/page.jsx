@@ -1,12 +1,12 @@
 
 import bottomStyle from './bottomStyle.module.scss'
 
-import linkedinIconBlack from '../../../../public/icons/linkedinBlack.png'
-import facebookIconBlack from '../../../../public/icons/facebookBlack.png'
-import instagramIconBlack from '../../../../public/icons/instagram-dark.png'
-import LogoBlack from '../../../../public/icons/logoBlack.png'
-import LanguageIconBlack from '../../../../public/icons/languageBlack.png'
-import DropArrowBlack from "../../../../public/icons/downArrowBlack.png"
+import linkedinIconBlack from '@/public/icons/linkedinBlack.png'
+import facebookIconBlack from '@/public/icons/facebookBlack.png'
+import instagramIconBlack from '@/public/icons/instagram-dark.png'
+import LogoBlack from '@/public/icons/logoBlack.png'
+import LanguageIconBlack from '@/public/icons/languageBlack.png'
+import DropArrowBlack from "@/public/icons/downArrowBlack.png"
 
 import Nav from "@/components/Nav/Nav"
 import Image from 'next/image'
@@ -20,14 +20,17 @@ export const metadata = {
 }
 
 export default async function Advantages({ params }) {
-  const consaltingServicesData = await getConsaltingServices()
-  const bottomData = await getCarrierBottom(params.bottomId)
+  const { locale, bottomId } = params;
+  const lang = locale || 'az';
+  const consaltingServicesData = await getConsaltingServices(lang)
+  const bottomData = await getCarrierBottom(bottomId, lang)
   
   
   return (
     <div>
       <nav className={bottomStyle.trendNav}>
       <Nav
+        locale = {locale}
         consaltingServicesData={consaltingServicesData}
         navMini={'navMini'}
         activeNavMini={'activeNavMini'}

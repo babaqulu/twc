@@ -19,9 +19,11 @@ import ContactForm from '@/components/ContactForm/ContactForm'
 
 
 async function Service({ params }) {
+  const { locale, serviceId } = params;
+  const lang = locale || 'az';
   // Fetch service data
-  const serviceData = await getService(params.serviceId);
-  console.log(serviceData);
+  const serviceData = await getService(serviceId, lang);
+  console.log('Id:', serviceId, 'locale:',locale);
   return (
     <div>
 
@@ -29,6 +31,7 @@ async function Service({ params }) {
       heroImg={serviceData.banner_image}
       heroText={serviceData.category}
       //Navbar props
+      locale={locale}
       contactTextColor={'contactTextWhite'}
       linkedinIcon={linkedinIconWhite}
       facebookIcon={facebookIconWhite}
