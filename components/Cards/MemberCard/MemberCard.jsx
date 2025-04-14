@@ -2,11 +2,7 @@
 
 import MemberStyle from './memberCard.module.scss'
 import Image from 'next/image' 
-import Link from 'next/link'
 
-import LinkedinIcon from '../../../public/icons/linkedin-dark.png'
-import FacebookinIcon from '../../../public/icons/facebook-dark.png'
-import InstagramIcon from '../../../public/icons/instagram-dark.png'
 
 
 

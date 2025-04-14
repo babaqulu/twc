@@ -7,7 +7,7 @@ import VacancyFormStyle from './VacancyFormStyle.module.scss';
 import PaperClip from '../../public/icons/paperClip.png';
 import Arrow from "../../public/icons/longRight.png";
 
-function VacancyForm() {
+function VacancyForm({lang}) {
   const [email, setEmail] = useState('');
   const [number, setNumber] = useState('');
   const [name, setName] = useState('');
@@ -64,7 +64,7 @@ function VacancyForm() {
           onChange={(e) => setName(e.target.value)}
           className={VacancyFormStyle.input}
           type="text"
-          placeholder="Ad və Soyad"
+          placeholder={lang==='az' ? "Ad və Soyad" : "Name and Surname"}
           required
         />
         <input
@@ -80,7 +80,7 @@ function VacancyForm() {
           onChange={(e) => setNumber(e.target.value)}
           className={VacancyFormStyle.input}
           type="tel"
-          placeholder="Telefon"
+          placeholder={lang==='az' ? "Telefon" : "Phone number"}
           required
         />
         <input
@@ -88,7 +88,7 @@ function VacancyForm() {
           onChange={(e) => setSubject(e.target.value)}
           className={VacancyFormStyle.input}
           type="text"
-          placeholder="Mövzu başlığı"
+          placeholder= {lang === 'az' ? "Mövzu başlığı" : "Topic title"}
           required
         />
         <div className={VacancyFormStyle.messageFile}>
@@ -100,7 +100,7 @@ function VacancyForm() {
             required
           ></textarea>
           <label htmlFor="file" className={VacancyFormStyle.labelFile}>
-            <p className={VacancyFormStyle.label}>Mesaj</p>
+            <p className={VacancyFormStyle.label}>{lang ==='az' ? "Mesaj" : "Message"}</p>
             <Image
               className={VacancyFormStyle.paperClip}
               alt="Choose file"
@@ -116,7 +116,7 @@ function VacancyForm() {
           />
         </div>
         <button type="submit" className={VacancyFormStyle.submitButton}>
-          Göndər
+          {lang==='az' ? "Göndər" : "Send"}
           <Image alt="Submit button" className={VacancyFormStyle.submitIcon} src={Arrow} />
         </button>
       </div>

@@ -6,13 +6,13 @@ import Card from "@/components/Cards/Card/Card"
 import Nav from "@/components/Nav/Nav"
 
 //Images
-import linkedinIconBlack from '../../public/icons/linkedinBlack.png'
-import facebookIconBlack from '../../public/icons/facebookBlack.png'
-import instagramIconBlack from '../../public/icons/instagram-dark.png'
-import LogoBlack from '../../public/icons/logoBlack.png'
-import LanguageIconBlack from '../../public/icons/languageBlack.png'
-import DropArrowBlack from "../../public/icons/downArrowBlack.png"
-import HeroEvents from "../../public/img/Events/HeroEvents.png"
+import linkedinIconBlack from '@/public/icons/linkedinBlack.png'
+import facebookIconBlack from '@/public/icons/facebookBlack.png'
+import instagramIconBlack from '@/public/icons/instagram-dark.png'
+import LogoBlack from '@/public/icons/logoBlack.png'
+import LanguageIconBlack from '@/public/icons/languageBlack.png'
+import DropArrowBlack from "@/public/icons/downArrowBlack.png"
+import HeroEvents from "@/public/img/Events/HeroEvents.png"
 
 import getConsaltingServices from '@/services/api/getConsaltingServices';
 import getAllEvents from '@/services/api/getAllEvents';
@@ -21,9 +21,10 @@ export const metadata = {
   title: 'Events'
 }
 
-async function page() {
-  const consaltingServicesData = await getConsaltingServices()
-  const eventsData = await getAllEvents()
+async function page({params}) {
+  const locale = params?.locale;
+  const consaltingServicesData = await getConsaltingServices(locale)
+  const eventsData = await getAllEvents(locale)
   const lastEvent =  eventsData.length
   
   
@@ -61,7 +62,7 @@ async function page() {
       className={EventsPageStyle.hero}
       />
       <div className={EventsPageStyle.eventsInner}>
-      <Header headline={'TƏDBİRLƏR VƏ XƏBƏRLƏR'} theCompHeader={'thePageHeader'}/>
+      <Header headline={locale === 'az' ? 'TƏDBİR VƏ XƏBƏRLƏR' : 'EVENTS AND NEWS'} theCompHeader={'thePageHeader'}/>
 
       <div className={EventsPageStyle.latestEvent}>
       {

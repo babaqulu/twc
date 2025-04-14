@@ -2,7 +2,6 @@ import BlogCardStyle from './BlogCardStyle.module.scss'
 
 import Image from 'next/image'
 import Arrow from '../../../public/icons/longRightDark.png'
-import HeroImg from "../../../public/img/hero_img.jpg"
 
 import MainMore_btn from '../../Buttons/MainMore_btn/MainMore_btn'
 

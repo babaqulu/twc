@@ -1,7 +1,5 @@
 
-// EXTERNAL IMPORTS
-import Image from "next/image";
-import Link from "next/link";
+
 import styles from "./page.module.scss";
 
 
@@ -12,7 +10,7 @@ import instagramIconWhite from "../../public/icons/instagram-white.png"
 import LogoWhite from "../../public/icons/logoWhite.png"
 import LanguageIconWhite from "../../public/icons/languageWhite.png"
 import DropArrowWhite from "../../public/icons/downArrowWhite.png"
-import DropArrowBlack from "@/public/icons/downArrowBlack.png"
+
 
 
 // COMPONENTS

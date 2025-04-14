@@ -7,7 +7,6 @@ import { useEffect, useState } from 'react';
 import AzFlag from '@/public/icons/az-flag.png'
 import EnFlag from '@/public/icons/en-flag.png'
 
-import Link from 'next/link'
 import Image from 'next/image'
 
 function Language({language_btnColor,languageIconColor, languageIcon, languageDropIconColor, languageDropArrow}) {

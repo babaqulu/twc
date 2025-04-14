@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import clientLogoStyle from './clientLogoStyle.module.scss'
+
 
 function ClientLogo({logo,logoContainer, logoClass}) {
   return (

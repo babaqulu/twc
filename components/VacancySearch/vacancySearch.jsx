@@ -1,6 +1,5 @@
 "use client"
 import React, { useState } from 'react'
-import VacancyCart from '../AboutVacancyCard/AboutVacancyCard';
 import VacanySearchStyle from './vacancySearchStyle.module.scss'
 import SearchIcon from '@/public/icons/search.png'
 import Image from 'next/image';

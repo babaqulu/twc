@@ -1,4 +1,4 @@
-import Link from "next/link";
+
 import sectionStyle from "./sectionSlider.module.scss"
 import Image from "next/image";
 
@@ -7,7 +7,7 @@ import More_btn from "../Buttons/BlueMore_btn/MoreBtn";
 import getDoingBussiness from "@/services/api/getDoingBussiness"
 
 
-async function sectionSlider({sectionimg, text, link}) {
+async function sectionSlider({text, link}) {
 
   const doingBussiness = getDoingBussiness()
   const doingBussinessData = await doingBussiness

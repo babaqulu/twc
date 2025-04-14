@@ -7,15 +7,15 @@ import instagramIconWhite from "@/public/icons/instagram-white.png"
 import LogoWhite from "@/public/icons/logoWhite.png"
 import LanguageIconWhite from "@/public/icons/languageWhite.png"
 import DropArrowWhite from "@/public/icons/downArrowWhite.png"
-import DropArrowBlack from "@/public/icons/downArrowBlack.png"
+
 
 import Hero from '@/components/Hero/Hero'
 import ImproveBussiness from '@/components/ImproveBussiness/ImproveBussiness'
-import Image from 'next/image'
+
 
 import getService from '@/services/api/getService'
 import Grid from '@/components/ManualGrid/Grid'
-import ContactForm from '@/components/ContactForm/ContactForm'
+
 
 
 async function Service({ params }) {

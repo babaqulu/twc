@@ -5,13 +5,8 @@ function Grid({
   img,
   gridDirection,
   HeroImg,
-  gridInfo,
   regularText,
-  GridPar,
   text,
-  header,
-  headerClass,
-  GridWithHeader
 }) {
 
 

@@ -1,7 +1,5 @@
 import AboutVacancyCardStyle from './AboutVacancyCardStyle.module.scss'
 
-
-import Arrow from '../../public/icons/longRight.png'
 import ApplyBtn from '../Buttons/Apply_btn/applyBtn';
 
 function AboutVacancyCard({vacancy, link, jobInfoTextAbout, locale}) {

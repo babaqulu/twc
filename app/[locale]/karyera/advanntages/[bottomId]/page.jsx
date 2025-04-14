@@ -10,7 +10,6 @@ import DropArrowBlack from "@/public/icons/downArrowBlack.png"
 
 import Nav from "@/components/Nav/Nav"
 import Image from 'next/image'
-import Link from 'next/link'
 
 import getCarrierBottom from '@/services/api/getCarrierBottom'
 import getConsaltingServices from '@/services/api/getConsaltingServices';

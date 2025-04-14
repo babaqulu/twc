@@ -6,7 +6,6 @@ import Link from "next/link";
 
 import navStyles from "./nav.module.scss";
 import Language from "../Language/Language";
-import HamburgerMenu from "@/public/icons/hamburgermenu.png"
 import NavSm from "../NavSm/NavSm";
 
 

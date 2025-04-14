@@ -13,10 +13,9 @@ import BgMembers from '@/public/img/BG.png'
 
 
 //Component
-import MemberCard from "@/components/Cards/MemberCard/MemberCard"
 import Grid from '@/components/ManualGrid/Grid';
 import Hero from "@/components/Hero/Hero"
-import Partners from '@/components/Partners/Partners';
+
 
 //api
 import getAbout from '@/services/api/getAbout';

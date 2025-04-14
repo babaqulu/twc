@@ -10,8 +10,7 @@ import instagramIconBlack from '@/public/icons/instagram-dark.png'
 import LogoBlack from '@/public/icons/logoBlack.png'
 import LanguageIconBlack from '@/public/icons/languageBlack.png'
 import DropArrowBlack from "@/public/icons/downArrowBlack.png"
-import Muraciet from "@/public/img/contact/muraciet.png"
-import HeroElaqe from "@/public/img/Elaqe/heroElaqe.png"
+
 
 //Components
 import ContactForm from '@/components/ContactForm/ContactForm'

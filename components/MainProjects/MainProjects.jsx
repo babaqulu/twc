@@ -16,7 +16,6 @@ import {Autoplay, Pagination, FreeMode } from 'swiper/modules';
 
 import Image from 'next/image'
 import MainProjectsStyle from './MainProjectsStyle.module.scss'
-import MainMore_btn from '../Buttons/MainMore_btn/MainMore_btn'
 
 function MainProjects({mainProjectData, locale}) {
   const [activeDesc, setActiveDesc] = useState(false)

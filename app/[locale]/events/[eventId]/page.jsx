@@ -1,12 +1,12 @@
 
 import eventStyle from './eventStyle.module.scss'
 
-import linkedinIconBlack from '../../../public/icons/linkedinBlack.png'
-import facebookIconBlack from '../../../public/icons/facebookBlack.png'
-import instagramIconBlack from '../../../public/icons/instagram-dark.png'
-import LogoBlack from '../../../public/icons/logoBlack.png'
-import LanguageIconBlack from '../../../public/icons/languageBlack.png'
-import DropArrowBlack from "../../../public/icons/downArrowBlack.png"
+import linkedinIconBlack from '@/public/icons/linkedinBlack.png'
+import facebookIconBlack from '@/public/icons/facebookBlack.png'
+import instagramIconBlack from '@/public/icons/instagram-dark.png'
+import LogoBlack from '@/public/icons/logoBlack.png'
+import LanguageIconBlack from '@/public/icons/languageBlack.png'
+import DropArrowBlack from "@/public/icons/downArrowBlack.png"
 
 import Image from 'next/image'
 
@@ -21,9 +21,11 @@ export const metadata = {
 }
 
 export default async function Event({ params }) {
-  const consaltingServicesData = await getConsaltingServices()
-  const events = getAllEvents()
-  const event = getEvent(params.eventId)
+  const { locale, eventId } = params;
+  const lang = locale || 'az';
+  const consaltingServicesData = await getConsaltingServices(lang)
+  const events = getAllEvents(lang)
+  const event = getEvent(eventId, lang)
   const [eventsData, eventData] = await Promise.all([events, event])
   
   return (
@@ -67,7 +69,7 @@ export default async function Event({ params }) {
         </div>
 
         <div className={eventStyle.latestEvents}>
-          <h4 className={eventStyle.cardHeader}>Ən son tədbir və xəbərlər</h4>
+          <h4 className={eventStyle.cardHeader}>{locale === 'az' ? 'Ən son tədbir və xəbərlər' : 'Latest events'}</h4>
 
         <div className={eventStyle.eventsList}>
         {
@@ -85,7 +87,7 @@ export default async function Event({ params }) {
               src={event.image}/>
               <div className={eventStyle.latestCardText}>
               {/* <p className={trendStyle.date}>{trend.created_date}</p> */}
-              <p className={eventStyle.title}>{event.title.slice(0,50) + '...'}</p>
+              <p className={eventStyle.title}>{event.title.slice(0,20) + '...'}</p>
               <p className={eventStyle.titleSm}>{event.title.slice(0,20) + '...'}</p>
               </div>
               
